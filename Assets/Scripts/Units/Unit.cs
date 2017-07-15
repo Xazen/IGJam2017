@@ -4,6 +4,7 @@ public abstract class Unit : MonoBehaviour
 {
 	public GameObject Prefab;
 	public Color OriginalColor;
+	public Color OriginalEmissionColor;
 
 	private MeshRenderer _renderer;
 	
@@ -22,10 +23,12 @@ public abstract class Unit : MonoBehaviour
 	public void SetMaterialColor(Color materialColor)
 	{
 		_renderer.material.color = materialColor;
+		_renderer.material.SetColor("_EmissionColor", materialColor);
 	}
 
 	public void ResetMaterial()
 	{
 		_renderer.material.color = OriginalColor;
+		_renderer.material.SetColor("_EmissionColor", OriginalEmissionColor);
 	}
 }

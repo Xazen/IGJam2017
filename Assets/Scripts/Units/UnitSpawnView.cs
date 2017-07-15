@@ -52,14 +52,13 @@ public class UnitSpawnView : MonoBehaviour
 
 	private bool IsMouseOverMap(out Vector3 mousePosition)
 	{
-		Ray	ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+		Ray	ray = MainCamera.ScreenPointToRay(Input.mousePosition);
 		RaycastHit hit;
 		if (Physics.Raycast(ray, out hit))
 		{
 			mousePosition = hit.point;
 			return true;
 		}
-		
 		// Just move the preview somewhere outside the visible area
 		mousePosition = new Vector3(-1000, -1000, -1000);
 		return false;

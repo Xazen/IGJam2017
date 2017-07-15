@@ -965,7 +965,7 @@ GameObject:
   - component: {fileID: 4912262092061106}
   - component: {fileID: 95837029039535568}
   - component: {fileID: 114982208480307750}
-  - component: {fileID: 65214552589741504}
+  - component: {fileID: 65504479131778306}
   m_Layer: 0
   m_Name: street_shop_001 1(Clone)
   m_TagString: Map
@@ -1477,7 +1477,7 @@ GameObject:
   - component: {fileID: 4601951769328808}
   - component: {fileID: 95630012752384342}
   - component: {fileID: 114257744736245154}
-  - component: {fileID: 65870289836480978}
+  - component: {fileID: 65120304148853218}
   m_Layer: 0
   m_Name: street_shop_001 1(Clone)
   m_TagString: Map
@@ -2863,7 +2863,7 @@ GameObject:
   - component: {fileID: 4989584085839692}
   - component: {fileID: 95857710847828958}
   - component: {fileID: 114965382551110172}
-  - component: {fileID: 65517360812611800}
+  - component: {fileID: 65329972804322192}
   m_Layer: 0
   m_Name: street_shop_001 1(Clone)
   m_TagString: Map
@@ -3295,7 +3295,7 @@ GameObject:
   - component: {fileID: 4011280592714264}
   - component: {fileID: 95321868536532234}
   m_Layer: 0
-  m_Name: street_straight_001(Clone)
+  m_Name: street_straight_001(Clone)-start
   m_TagString: Map
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4172,7 +4172,7 @@ GameObject:
   - component: {fileID: 4086577607347306}
   - component: {fileID: 95633378770234232}
   - component: {fileID: 114698749788733330}
-  - component: {fileID: 65546655970581014}
+  - component: {fileID: 65897010438602362}
   m_Layer: 0
   m_Name: street_shop_001 1(Clone)
   m_TagString: Map
@@ -24263,53 +24263,53 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1509381542048370}
   m_Mesh: {fileID: 4300030, guid: fe4caa62c1c8ec749ae02c7f85af1de0, type: 3}
---- !u!65 &65214552589741504
-BoxCollider:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1125964191771144}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 100, y: 100, z: 100}
-  m_Center: {x: 0, y: 0, z: 0}
---- !u!65 &65517360812611800
-BoxCollider:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1427687694001746}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 100, y: 100, z: 100}
-  m_Center: {x: 0, y: 0, z: 0}
---- !u!65 &65546655970581014
-BoxCollider:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1576888667383224}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 100, y: 100, z: 100}
-  m_Center: {x: 0, y: 0, z: 0}
---- !u!65 &65870289836480978
+--- !u!65 &65120304148853218
 BoxCollider:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1202186044890182}
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 100, y: 100, z: 100}
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!65 &65329972804322192
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1427687694001746}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!65 &65504479131778306
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1125964191771144}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!65 &65897010438602362
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1576888667383224}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!95 &95009776981575704
 Animator:
