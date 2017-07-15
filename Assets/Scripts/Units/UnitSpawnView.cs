@@ -31,11 +31,13 @@ public class UnitSpawnView : MonoBehaviour
 		// No unit selected, just return
 		if (_unitSpawnController == null || !_unitSpawnController.IsUnitSelected())
 		{
+			Debug.Log("no unit selected");
 			return;
 		}
 
 		if (IsMouseOverMap(out _mouseMapHitPosition))
 		{
+			Debug.Log("mouse overlap map");
 			_targetUnitSpawnPreviewPosition = new Vector3(
 				Mathf.RoundToInt(_mouseMapHitPosition.x),
 				Mathf.RoundToInt(_mouseMapHitPosition.z));
@@ -53,14 +55,19 @@ public class UnitSpawnView : MonoBehaviour
 
 	private bool IsMouseOverMap(out Vector3 mousePosition)
 	{
+		Debug.Log("Input.mousePosition " + Input.mousePosition);
 		Ray	ray = Camera.main.ScreenPointToRay(Input.mousePosition);
 		RaycastHit hit;
-		if(Physics.Raycast(ray, out hit))
+		if (Physics.Raycast(ray, out hit))
 		{
+			Debug.Log("mouse over map true " + ray.origin);
+			Debug.Log("mouse over map true " + ray.direction);
 			mousePosition = hit.point;
 			return true;
 		}
 		
+		Debug.Log("mouse over map false " + ray.origin);
+		Debug.Log("mouse over map false " + ray.direction);
 		// Just move the preview somewhere outside the visible area
 		mousePosition = new Vector3(-1000, -1000, -1000);
 		return false;
@@ -68,8 +75,10 @@ public class UnitSpawnView : MonoBehaviour
 
 	private void UpdateSpawnPreview()
 	{
+		Debug.Log("Update spawn position");
 		if (!IsSpawnPending() && _unitSpawnController.IsUnitSelected())
 		{
+			// Instantiate prefab
 			_unitSpawnPreview = _unitSpawnController.GetSelectedUnitPrefab();
 			_unitSpawnPreviewGo = Instantiate(_unitSpawnPreview.GetModel(), _targetUnitSpawnPreviewPosition,
 				Quaternion.identity);
@@ -77,6 +86,7 @@ public class UnitSpawnView : MonoBehaviour
 		}
 		else if (IsSpawnPreviewPositionOutdated())
 		{
+			//Update prefab position
 			_unitSpawnPreviewGo.transform.position = new Vector3(_targetUnitSpawnPreviewPosition.x, 0, _targetUnitSpawnPreviewPosition.y);
 
 			if (IsSpawnPossible())
