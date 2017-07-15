@@ -5,7 +5,7 @@ using Zenject;
 public class UnitSpawnView : MonoBehaviour
 {
 	private const double PositionCompareTolerance = 0.001f;
-
+	
 	[Header("General")]
 	public Camera MainCamera;
 	
