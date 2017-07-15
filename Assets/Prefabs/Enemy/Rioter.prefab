@@ -450,7 +450,7 @@ GameObject:
   - component: {fileID: 54760327572589534}
   m_Layer: 0
   m_Name: Rioter
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2101,6 +2101,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ccaba502ca45a0b478965ab1b8565f3b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _health: 100
+  _invicibiltySeconds: 1
   _damagePoints: 10
   _attackRate: 1
   _pathfinder: {fileID: 114564525284648238}
