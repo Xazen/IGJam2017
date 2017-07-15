@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 using Zenject;
-
+/*
 public class CubeClass : MonoBehaviour {
 
 	private Bar _bar;
@@ -22,3 +22,4 @@ public class CubeClass : MonoBehaviour {
 		_bar.BarLog();
 	}
 }
+*/
