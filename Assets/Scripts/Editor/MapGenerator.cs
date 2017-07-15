@@ -3,7 +3,10 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEditor;
 using UnityEngine;
-
+/// <summary>
+/// Creates a map based on a csv file. 
+/// A row is mapped on the z axis, a column on the x axis
+/// </summary>
 public class MapGenerator : EditorWindow {
 
     private List<GameObject> _tiles = new List<GameObject>();
@@ -62,9 +65,10 @@ public class MapGenerator : EditorWindow {
                             }
                             
                             _grid[i, j] = parsedCell;
-                            if (_grid[i, j] != -1) {
-                            GameObject g = _tiles[_grid[i, j]];
-                                Instantiate(g,new Vector3(j,0,i), Quaternion.Euler(0, parsedRotationCell, 0), parent.transform);
+                            if (_grid[i, j] != -1)
+                            {
+                                GameObject g = _tiles[_grid[i, j]];
+                                Instantiate(g, new Vector3(i, 0, j), Quaternion.Euler(0, parsedRotationCell, 0), parent.transform);
                             }
                         }
                     }
