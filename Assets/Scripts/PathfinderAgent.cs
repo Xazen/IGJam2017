@@ -2,7 +2,6 @@
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
-using System.Net;
 using Assets.Scripts.Model;
 using UnityEngine;
 using Zenject;
@@ -81,8 +80,6 @@ public class PathfinderAgent : MonoBehaviour
         }
         return null;
     }
-
-    
 
     private List<Cell> GetAdjacentCells(Cell pos, List<Cell> marked)
     {
