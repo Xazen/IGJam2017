@@ -16,6 +16,12 @@ public class GridController: IInitializable
     {
         {"0", CellType.Wall },
         {"1", CellType.Street },
+        {"2", CellType.Street },
+        {"3", CellType.Street },
+        {"4", CellType.Street },
+        {"5", CellType.Street },
+        {"6", CellType.Street },
+        {"7", CellType.Street },
     };
 
     public void Initialize()
