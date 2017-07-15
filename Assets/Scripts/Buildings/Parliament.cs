@@ -5,7 +5,6 @@ using UnityEngine;
 
 public class Parliament : Building
 {
-    private bool _destroyed;
 
     private void OnTriggerEnter(Collider other)
     {
