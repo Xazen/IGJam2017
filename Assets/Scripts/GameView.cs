@@ -5,7 +5,7 @@ using Zenject;
 
 public class GameView : MonoBehaviour
 {
-    private const float SpawnFrequency = 0.1f;
+    private const float SpawnFrequency = 0.3f;
     
     [Header("Buildings")] 
     public Transform[] StartingPositions;
