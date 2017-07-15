@@ -10,8 +10,8 @@ public class UnitSpawnView : MonoBehaviour
 	public Camera MainCamera;
 	
 	[Header("Span materials")]
-	public Material SpawnPossibleMaterial;
-	public Material SpawnImpossibleMaterial;
+	public Color SpawnPossibleMaterialColor;
+	public Color SpawnImpossibleMaterialColor;
 
 	private Vector2 _targetUnitSpawnPreviewPosition;
 	private GameObject _unitSpawnPreviewGo;
@@ -31,13 +31,11 @@ public class UnitSpawnView : MonoBehaviour
 		// No unit selected, just return
 		if (_unitSpawnController == null || !_unitSpawnController.IsUnitSelected())
 		{
-			Debug.Log("no unit selected");
 			return;
 		}
 
 		if (IsMouseOverMap(out _mouseMapHitPosition))
 		{
-			Debug.Log("mouse overlap map");
 			_targetUnitSpawnPreviewPosition = new Vector3(
 				Mathf.RoundToInt(_mouseMapHitPosition.x),
 				Mathf.RoundToInt(_mouseMapHitPosition.z));
@@ -46,8 +44,7 @@ public class UnitSpawnView : MonoBehaviour
 
 		if (Input.GetKeyDown(KeyCode.Mouse0) && IsSpawnPossible())
 		{
-			Debug.Log("spawn!");
-			_unitSpawnPreview.ResetMaterial();
+			_unitSpawnPreviewGo.GetComponent<Unit>().ResetMaterial();
 			ResetSpawnPending();
 			_unitSpawnController.ResetSelectedUnit();
 		}
@@ -55,19 +52,14 @@ public class UnitSpawnView : MonoBehaviour
 
 	private bool IsMouseOverMap(out Vector3 mousePosition)
 	{
-		Debug.Log("Input.mousePosition " + Input.mousePosition);
 		Ray	ray = Camera.main.ScreenPointToRay(Input.mousePosition);
 		RaycastHit hit;
 		if (Physics.Raycast(ray, out hit))
 		{
-			Debug.Log("mouse over map true " + ray.origin);
-			Debug.Log("mouse over map true " + ray.direction);
 			mousePosition = hit.point;
 			return true;
 		}
 		
-		Debug.Log("mouse over map false " + ray.origin);
-		Debug.Log("mouse over map false " + ray.direction);
 		// Just move the preview somewhere outside the visible area
 		mousePosition = new Vector3(-1000, -1000, -1000);
 		return false;
@@ -75,7 +67,6 @@ public class UnitSpawnView : MonoBehaviour
 
 	private void UpdateSpawnPreview()
 	{
-		Debug.Log("Update spawn position");
 		if (!IsSpawnPending() && _unitSpawnController.IsUnitSelected())
 		{
 			// Instantiate prefab
@@ -92,12 +83,12 @@ public class UnitSpawnView : MonoBehaviour
 			if (IsSpawnPossible())
 			{
 				Debug.Log("possible");
-				_unitSpawnPreview.SetMaterial(SpawnPossibleMaterial);
+				_unitSpawnPreviewGo.GetComponent<Unit>().SetMaterialColor(SpawnPossibleMaterialColor);
 			}
 			else
 			{
 				Debug.Log("impossible");
-				_unitSpawnPreview.SetMaterial(SpawnImpossibleMaterial);
+				_unitSpawnPreviewGo.GetComponent<Unit>().SetMaterialColor(SpawnImpossibleMaterialColor);
 			}
 		}
 	}

@@ -3,28 +3,29 @@
 public abstract class Unit : MonoBehaviour
 {
 	public GameObject Prefab;
-	public Material OriginalMaterial;
+	public Color OriginalColor;
 
 	private MeshRenderer _renderer;
 	
 	public abstract void OnUnitSpawned();
 
+	public void Start()
+	{
+		_renderer = GetComponentInChildren<MeshRenderer>();
+	}
+	
 	public GameObject GetModel()
 	{
 		return Prefab;
 	}
 
-	public void SetMaterial(Material material)
+	public void SetMaterialColor(Color materialColor)
 	{
-		_renderer = GetComponentInChildren<MeshRenderer>();
-		_renderer.material = material;
-		_renderer.materials = new []{material};
-		_renderer.sharedMaterial = material;
-		_renderer.sharedMaterials = new []{material};
+		_renderer.material.color = materialColor;
 	}
 
 	public void ResetMaterial()
 	{
-		_renderer.sharedMaterials[0] = OriginalMaterial;
+		_renderer.material.color = OriginalColor;
 	}
 }
