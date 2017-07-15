@@ -3,6 +3,7 @@ using UnityEngine;
 
 public abstract class Unit : MonoBehaviour
 {
+	public UnitType UnitType;
 	public GameObject Prefab;
     public int MaxHealth;
     public Color OriginalColor;

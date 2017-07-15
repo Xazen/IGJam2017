@@ -5,10 +5,18 @@ using Zenject;
 public class GameController : ITickable
 {
     public int Budget = 1000;
+    public int PoliceCost = 500;
+    public int BarrierCost = 250;
     public int CasualtyCounter;
     public int RoundCasualties;
 
-    public int[] WaveReward;
+    public int[] WaveReward =
+    {
+	    1000,
+	    100,
+	    10,
+	    1
+    };
 	public const float RoundDuration = 20f;
 	public const float MercyDuration = 5f;
 	public const int SpawnAmount = 5;
@@ -16,6 +24,9 @@ public class GameController : ITickable
 	public Vector2[] StartingPoint;
 	public Vector2 TargetPoint;
 
+	public delegate void BudgetChangedDelegate(int newBudget, int deltaBudget);
+	public event BudgetChangedDelegate OnBudgetChanged;
+	
 	public delegate void RoundDelegate(int round);
 	public event RoundDelegate OnRoundStarted;
 	
@@ -127,8 +138,17 @@ public class GameController : ITickable
 
     private void RewardPlayer()
     {
-       // Budget += WaveReward[_round];
+       UpdateBudget(WaveReward[Mathf.Clamp(_round, 0, WaveReward.Length-1)]);
     }
+
+	public void UpdateBudget(int deltaBudget)
+	{
+		Budget += deltaBudget;
+		if (OnBudgetChanged != null)
+		{
+			OnBudgetChanged(Budget, deltaBudget);
+		}
+	}
 
     private void SpawnEnemies()
 	{
@@ -137,6 +157,19 @@ public class GameController : ITickable
 		if (OnEnemySpawn != null)
 		{
 			OnEnemySpawn(spawnCount);
+		}
+	}
+
+	public int GetCost(UnitType unitType)
+	{
+		switch (unitType)
+		{
+			case UnitType.Police:
+				return PoliceCost;
+			case UnitType.Barrier:
+				return BarrierCost;
+			default:
+				throw new ArgumentOutOfRangeException("unitType", unitType, null);
 		}
 	}
 }
