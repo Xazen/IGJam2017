@@ -3,8 +3,9 @@ using System.Collections.Generic;
 using System.IO;
 using Assets.Scripts.Model;
 using UnityEngine;
+using Zenject;
 
-public class GridController : MonoBehaviour
+public class GridController: IInitializable
 {
 
     public Cell[,] Grid { get; set; }
@@ -18,17 +19,11 @@ public class GridController : MonoBehaviour
         {"1", CellType.Street },
     };
 
-    // Use this for initialization
-    void Awake()
+    public void Initialize()
     {
         Grid = ParseMap(_pathToMapFile);
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-
-    }
 
 
     private Cell[,] ParseMap(string mapFilePath)
