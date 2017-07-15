@@ -29,6 +29,7 @@ public class GameView : MonoBehaviour
 
     public void Start()
     {
+        _gameController.Setup(StartingPosition.position, CongressCenter.transform.position);
         GameObject enemySpawner = Instantiate(EnemySpawnerPrefab, new Vector3(_gameController.StartingPoint.x, 0, _gameController.StartingPoint.y), Quaternion.identity);
         _enemySpawner = enemySpawner.GetComponent<EnemySpawner>();
         _diContainer.InjectGameObject(enemySpawner);

@@ -5,10 +5,12 @@ public class EnemySpawner : MonoBehaviour
 {
     public GameObject Enemy;
     private DiContainer _diContainer;
+    private GameController _gameController;
 
     [Inject]
-    public void Inject(DiContainer diContainer)
+    public void Inject(DiContainer diContainer, GameController gameController)
     {
+        _gameController = gameController;
         _diContainer = diContainer;
     }
     
@@ -16,6 +18,6 @@ public class EnemySpawner : MonoBehaviour
     {
         GameObject enemy = Instantiate(Enemy, gameObject.transform.position, Quaternion.identity);
         _diContainer.InjectGameObject(enemy);
-        enemy.GetComponent<PathfinderAgent>().CalculatePath(new Vector3(23, 0, 20));
+        enemy.GetComponent<PathfinderAgent>().CalculatePath(new Vector3(_gameController.TargetPoint.x, 0, _gameController.TargetPoint.y));
     }
 }
