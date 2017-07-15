@@ -15,6 +15,7 @@ public abstract class Building : MonoBehaviour
     private int _health;
 
     protected GameController _gameController;
+    protected bool _destroyed;
 
     void Awake()
     {
@@ -45,7 +46,7 @@ public abstract class Building : MonoBehaviour
 
     public virtual void DestroyBuilding()
     {
-        Destroy(gameObject);
+        _destroyed = true;
     }
 
     private int CalculateCasualty(int dmg)

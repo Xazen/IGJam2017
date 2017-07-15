@@ -1,7 +1,11 @@
-﻿public class Barrier : Unit 
+﻿using UnityEngine;
+
+public class Barrier : Unit 
 {
     public override void OnUnitSpawned()
     {
         
     }
+
+    
 }

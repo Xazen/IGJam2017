@@ -11,9 +11,8 @@ public class Shop : Building
     {
         
         var rioter = other.gameObject.GetComponent<Rioter>();
-        if (rioter != null && !_attackers.Contains(rioter))
+        if (rioter != null && !_attackers.Contains(rioter) && !_destroyed)
         {
-            Debug.Log("attacker added");
             _attackers.Add(rioter);
             rioter.Stop();
         }
@@ -22,7 +21,7 @@ public class Shop : Building
     private void OnTriggerStay(Collider other)
     {
         var rioter = other.gameObject.GetComponent<Rioter>();
-        if (rioter != null)
+        if (rioter != null && !_destroyed)
         {
             GetDamage(rioter.TryAttack());
         }
@@ -31,7 +30,6 @@ public class Shop : Building
 
     public override void DestroyBuilding()
     {
-        Debug.Log("shop destroyed");
         foreach (var rioter in _attackers)
         {
             rioter.Continue();
