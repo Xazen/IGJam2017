@@ -1,5 +1,4 @@
 ﻿using System;
-using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using Assets.Scripts.Model;
@@ -50,13 +49,13 @@ public class PathfinderAgent : MonoBehaviour
         _gridController = gc;
     }
 
-    public void CalculatePath()
+    public void CalculatePath(Vector3 targetPosition)
     {
+        _targetPosition = targetPosition;
         var startCell = WorldToCell(transform.position);
         _targetCell = WorldToCell(_targetPosition);
 
         _currentPath = CalculatePath(startCell, new List<Cell>());
-
     }
 
     public List<Cell> CalculatePath(Cell pos, List<Cell> marked)
@@ -132,13 +131,6 @@ public class PathfinderAgent : MonoBehaviour
         var direction = _nextCell.Position - WorldToGridPos(transform.position);
         
         transform.position += GridToWorldPos(direction.normalized * _movementSpeed * Time.deltaTime);
-    }
-
-    // Use this for initialization
-    void Start()
-    {
-        CalculatePath();
-
     }
 
     // Update is called once per frame

@@ -31,16 +31,13 @@ public class GameController : ITickable
 			OnGameStarted();
 		}
 		
-		if (OnRoundStarted != null)
-		{
-			OnRoundStarted(_round);
-		}
+		StartNextRound();
 	}
 
 	public void ResetGame()
 	{
 		_gameStarted = false;
-		_round = 1;
+		_round = 0;
 	}
 
 	public void Tick()
