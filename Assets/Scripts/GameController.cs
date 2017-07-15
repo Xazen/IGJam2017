@@ -61,6 +61,11 @@ public class GameController : ITickable
 		_currentRoundDuration = 0;
 	}
 
+    public void FailGame()
+    {
+        Debug.Log("fail");
+    }
+
 	public void Tick()
 	{
 		// Game not running

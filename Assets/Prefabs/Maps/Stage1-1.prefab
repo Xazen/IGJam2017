@@ -23,7 +23,7 @@ GameObject:
   - component: {fileID: 23066087870914454}
   m_Layer: 0
   m_Name: street_straight_001
-  m_TagString: Untagged
+  m_TagString: Map
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -72,7 +72,7 @@ GameObject:
   - component: {fileID: 23205782200470166}
   m_Layer: 0
   m_Name: street_city_fill_001
-  m_TagString: Untagged
+  m_TagString: Map
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -105,7 +105,7 @@ GameObject:
   - component: {fileID: 23732418829537086}
   m_Layer: 0
   m_Name: street_city_fill_001
-  m_TagString: Untagged
+  m_TagString: Map
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -138,7 +138,7 @@ GameObject:
   - component: {fileID: 23199360494499692}
   m_Layer: 0
   m_Name: street_city_fill_001
-  m_TagString: Untagged
+  m_TagString: Map
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -187,7 +187,7 @@ GameObject:
   - component: {fileID: 23715860566531968}
   m_Layer: 0
   m_Name: street_straight_001
-  m_TagString: Untagged
+  m_TagString: Map
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -236,7 +236,7 @@ GameObject:
   - component: {fileID: 23105437298095990}
   m_Layer: 0
   m_Name: street_city_fill_001
-  m_TagString: Untagged
+  m_TagString: Map
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -253,7 +253,7 @@ GameObject:
   - component: {fileID: 23739237824828924}
   m_Layer: 0
   m_Name: street_straight_001
-  m_TagString: Untagged
+  m_TagString: Map
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -302,7 +302,7 @@ GameObject:
   - component: {fileID: 23619852736992906}
   m_Layer: 0
   m_Name: street_straight_001
-  m_TagString: Untagged
+  m_TagString: Map
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -319,7 +319,7 @@ GameObject:
   - component: {fileID: 23292124951989972}
   m_Layer: 0
   m_Name: street_straight_001
-  m_TagString: Untagged
+  m_TagString: Map
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -336,7 +336,7 @@ GameObject:
   - component: {fileID: 23024281545376996}
   m_Layer: 0
   m_Name: street_city_fill_001
-  m_TagString: Untagged
+  m_TagString: Map
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -353,7 +353,7 @@ GameObject:
   - component: {fileID: 23764262248238554}
   m_Layer: 0
   m_Name: street_city_fill_001
-  m_TagString: Untagged
+  m_TagString: Map
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -370,7 +370,7 @@ GameObject:
   - component: {fileID: 23374917727236350}
   m_Layer: 0
   m_Name: street_city_fill_001
-  m_TagString: Untagged
+  m_TagString: Map
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -387,7 +387,7 @@ GameObject:
   - component: {fileID: 23894821637698866}
   m_Layer: 0
   m_Name: street_straight_001
-  m_TagString: Untagged
+  m_TagString: Map
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -484,7 +484,7 @@ GameObject:
   - component: {fileID: 23766596680951174}
   m_Layer: 0
   m_Name: street_straight_001
-  m_TagString: Untagged
+  m_TagString: Map
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -517,7 +517,7 @@ GameObject:
   - component: {fileID: 23957862396353314}
   m_Layer: 0
   m_Name: street_city_fill_001
-  m_TagString: Untagged
+  m_TagString: Map
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -566,7 +566,7 @@ GameObject:
   - component: {fileID: 23036561180542506}
   m_Layer: 0
   m_Name: street_city_fill_001
-  m_TagString: Untagged
+  m_TagString: Map
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -615,7 +615,7 @@ GameObject:
   - component: {fileID: 23120081625851340}
   m_Layer: 0
   m_Name: street_city_fill_001
-  m_TagString: Untagged
+  m_TagString: Map
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -632,7 +632,7 @@ GameObject:
   - component: {fileID: 23135476714133240}
   m_Layer: 0
   m_Name: street_city_fill_001
-  m_TagString: Untagged
+  m_TagString: Map
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -649,7 +649,7 @@ GameObject:
   - component: {fileID: 23921259246660902}
   m_Layer: 0
   m_Name: street_straight_001
-  m_TagString: Untagged
+  m_TagString: Map
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -666,7 +666,7 @@ GameObject:
   - component: {fileID: 23973951585091004}
   m_Layer: 0
   m_Name: street_straight_001
-  m_TagString: Untagged
+  m_TagString: Map
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -683,7 +683,7 @@ GameObject:
   - component: {fileID: 23649152732606694}
   m_Layer: 0
   m_Name: street_city_fill_001
-  m_TagString: Untagged
+  m_TagString: Map
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -700,7 +700,7 @@ GameObject:
   - component: {fileID: 23068773707903616}
   m_Layer: 0
   m_Name: pCube77
-  m_TagString: Untagged
+  m_TagString: Map
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -733,7 +733,7 @@ GameObject:
   - component: {fileID: 23023980407350818}
   m_Layer: 0
   m_Name: street_city_fill_001
-  m_TagString: Untagged
+  m_TagString: Map
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -750,7 +750,7 @@ GameObject:
   - component: {fileID: 23263211973806218}
   m_Layer: 0
   m_Name: street_crossing_001
-  m_TagString: Untagged
+  m_TagString: Map
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -783,7 +783,7 @@ GameObject:
   - component: {fileID: 23184408377638512}
   m_Layer: 0
   m_Name: street_straight_001
-  m_TagString: Untagged
+  m_TagString: Map
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -800,7 +800,7 @@ GameObject:
   - component: {fileID: 23836068409620926}
   m_Layer: 0
   m_Name: street_city_fill_001
-  m_TagString: Untagged
+  m_TagString: Map
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -833,7 +833,7 @@ GameObject:
   - component: {fileID: 23961684130795470}
   m_Layer: 0
   m_Name: street_city_fill_001
-  m_TagString: Untagged
+  m_TagString: Map
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -850,7 +850,7 @@ GameObject:
   - component: {fileID: 23218702822002094}
   m_Layer: 0
   m_Name: street_straight_001
-  m_TagString: Untagged
+  m_TagString: Map
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -867,7 +867,7 @@ GameObject:
   - component: {fileID: 23188185563267058}
   m_Layer: 0
   m_Name: street_straight_001
-  m_TagString: Untagged
+  m_TagString: Map
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -884,7 +884,7 @@ GameObject:
   - component: {fileID: 23869044829252974}
   m_Layer: 0
   m_Name: street_straight_001
-  m_TagString: Untagged
+  m_TagString: Map
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -901,7 +901,7 @@ GameObject:
   - component: {fileID: 23603691941393374}
   m_Layer: 0
   m_Name: street_city_fill_001
-  m_TagString: Untagged
+  m_TagString: Map
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -934,7 +934,7 @@ GameObject:
   - component: {fileID: 23246573956128778}
   m_Layer: 0
   m_Name: pCube91
-  m_TagString: Untagged
+  m_TagString: Map
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -965,7 +965,7 @@ GameObject:
   - component: {fileID: 4912262092061106}
   - component: {fileID: 95837029039535568}
   - component: {fileID: 114982208480307750}
-  - component: {fileID: 65504479131778306}
+  - component: {fileID: 65047163656206704}
   m_Layer: 0
   m_Name: street_shop_001 1(Clone)
   m_TagString: Map
@@ -1017,7 +1017,7 @@ GameObject:
   - component: {fileID: 23362951320758822}
   m_Layer: 0
   m_Name: street_crossing_002
-  m_TagString: Untagged
+  m_TagString: Map
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1050,7 +1050,7 @@ GameObject:
   - component: {fileID: 23232963089979818}
   m_Layer: 0
   m_Name: street_city_fill_001
-  m_TagString: Untagged
+  m_TagString: Map
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1067,7 +1067,7 @@ GameObject:
   - component: {fileID: 23277942284667380}
   m_Layer: 0
   m_Name: street_straight_001
-  m_TagString: Untagged
+  m_TagString: Map
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1084,7 +1084,7 @@ GameObject:
   - component: {fileID: 23945343458540996}
   m_Layer: 0
   m_Name: street_city_fill_001
-  m_TagString: Untagged
+  m_TagString: Map
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1149,7 +1149,7 @@ GameObject:
   - component: {fileID: 23095235427263752}
   m_Layer: 0
   m_Name: street_city_fill_001
-  m_TagString: Untagged
+  m_TagString: Map
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1166,7 +1166,7 @@ GameObject:
   - component: {fileID: 23849147583012034}
   m_Layer: 0
   m_Name: street_city_fill_001
-  m_TagString: Untagged
+  m_TagString: Map
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1183,7 +1183,7 @@ GameObject:
   - component: {fileID: 23665047846084452}
   m_Layer: 0
   m_Name: street_city_fill_001
-  m_TagString: Untagged
+  m_TagString: Map
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1232,7 +1232,7 @@ GameObject:
   - component: {fileID: 23731674079632852}
   m_Layer: 0
   m_Name: street_crossing_001
-  m_TagString: Untagged
+  m_TagString: Map
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1265,7 +1265,7 @@ GameObject:
   - component: {fileID: 23910480129125766}
   m_Layer: 0
   m_Name: street_straight_001
-  m_TagString: Untagged
+  m_TagString: Map
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1298,7 +1298,7 @@ GameObject:
   - component: {fileID: 23658553055229858}
   m_Layer: 0
   m_Name: street_city_fill_001
-  m_TagString: Untagged
+  m_TagString: Map
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1363,7 +1363,7 @@ GameObject:
   - component: {fileID: 23358400862706002}
   m_Layer: 0
   m_Name: street_city_fill_001
-  m_TagString: Untagged
+  m_TagString: Map
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1380,7 +1380,7 @@ GameObject:
   - component: {fileID: 23751637344209628}
   m_Layer: 0
   m_Name: street_city_fill_001
-  m_TagString: Untagged
+  m_TagString: Map
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1397,7 +1397,7 @@ GameObject:
   - component: {fileID: 23321626247251480}
   m_Layer: 0
   m_Name: street_straight_001
-  m_TagString: Untagged
+  m_TagString: Map
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1462,7 +1462,7 @@ GameObject:
   - component: {fileID: 23212599353175766}
   m_Layer: 0
   m_Name: street_city_fill_001
-  m_TagString: Untagged
+  m_TagString: Map
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1477,7 +1477,7 @@ GameObject:
   - component: {fileID: 4601951769328808}
   - component: {fileID: 95630012752384342}
   - component: {fileID: 114257744736245154}
-  - component: {fileID: 65120304148853218}
+  - component: {fileID: 65000465523861014}
   m_Layer: 0
   m_Name: street_shop_001 1(Clone)
   m_TagString: Map
@@ -1497,7 +1497,7 @@ GameObject:
   - component: {fileID: 23334239511113872}
   m_Layer: 0
   m_Name: street_city_fill_001
-  m_TagString: Untagged
+  m_TagString: Map
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1546,7 +1546,7 @@ GameObject:
   - component: {fileID: 23039962238401534}
   m_Layer: 0
   m_Name: street_city_fill_001
-  m_TagString: Untagged
+  m_TagString: Map
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1563,7 +1563,7 @@ GameObject:
   - component: {fileID: 23821989795412718}
   m_Layer: 0
   m_Name: street_city_fill_001
-  m_TagString: Untagged
+  m_TagString: Map
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1612,7 +1612,7 @@ GameObject:
   - component: {fileID: 23404708106343534}
   m_Layer: 0
   m_Name: street_straight_001
-  m_TagString: Untagged
+  m_TagString: Map
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1629,7 +1629,7 @@ GameObject:
   - component: {fileID: 23788920221943090}
   m_Layer: 0
   m_Name: pCube94
-  m_TagString: Untagged
+  m_TagString: Map
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1694,7 +1694,7 @@ GameObject:
   - component: {fileID: 23794203747975592}
   m_Layer: 0
   m_Name: street_city_fill_001
-  m_TagString: Untagged
+  m_TagString: Map
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1711,7 +1711,7 @@ GameObject:
   - component: {fileID: 23687301133705326}
   m_Layer: 0
   m_Name: pCube78
-  m_TagString: Untagged
+  m_TagString: Map
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1728,7 +1728,7 @@ GameObject:
   - component: {fileID: 23248963451202170}
   m_Layer: 0
   m_Name: pCube97
-  m_TagString: Untagged
+  m_TagString: Map
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1745,7 +1745,7 @@ GameObject:
   - component: {fileID: 23087932647923052}
   m_Layer: 0
   m_Name: street_straight_001
-  m_TagString: Untagged
+  m_TagString: Map
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1778,7 +1778,7 @@ GameObject:
   - component: {fileID: 23918158667187808}
   m_Layer: 0
   m_Name: street_city_fill_001
-  m_TagString: Untagged
+  m_TagString: Map
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1811,7 +1811,7 @@ GameObject:
   - component: {fileID: 23314046721745330}
   m_Layer: 0
   m_Name: street_city_fill_001
-  m_TagString: Untagged
+  m_TagString: Map
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1828,7 +1828,7 @@ GameObject:
   - component: {fileID: 23997253463046022}
   m_Layer: 0
   m_Name: street_straight_001
-  m_TagString: Untagged
+  m_TagString: Map
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1861,7 +1861,7 @@ GameObject:
   - component: {fileID: 23339404405389796}
   m_Layer: 0
   m_Name: street_city_fill_001
-  m_TagString: Untagged
+  m_TagString: Map
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1910,7 +1910,7 @@ GameObject:
   - component: {fileID: 23633801558651876}
   m_Layer: 0
   m_Name: street_city_fill_001
-  m_TagString: Untagged
+  m_TagString: Map
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1991,7 +1991,7 @@ GameObject:
   - component: {fileID: 23871902979122828}
   m_Layer: 0
   m_Name: street_city_fill_001
-  m_TagString: Untagged
+  m_TagString: Map
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2040,7 +2040,7 @@ GameObject:
   - component: {fileID: 23026026917081230}
   m_Layer: 0
   m_Name: street_corner_001
-  m_TagString: Untagged
+  m_TagString: Map
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2057,7 +2057,7 @@ GameObject:
   - component: {fileID: 23783697770083324}
   m_Layer: 0
   m_Name: street_straight_001
-  m_TagString: Untagged
+  m_TagString: Map
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2170,7 +2170,7 @@ GameObject:
   - component: {fileID: 23505420420423266}
   m_Layer: 0
   m_Name: street_straight_001
-  m_TagString: Untagged
+  m_TagString: Map
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2187,7 +2187,7 @@ GameObject:
   - component: {fileID: 23029869345996832}
   m_Layer: 0
   m_Name: street_city_fill_001
-  m_TagString: Untagged
+  m_TagString: Map
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2204,7 +2204,7 @@ GameObject:
   - component: {fileID: 23304174397461462}
   m_Layer: 0
   m_Name: street_city_fill_001
-  m_TagString: Untagged
+  m_TagString: Map
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2237,7 +2237,7 @@ GameObject:
   - component: {fileID: 23364614919696854}
   m_Layer: 0
   m_Name: street_city_fill_001
-  m_TagString: Untagged
+  m_TagString: Map
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2286,7 +2286,7 @@ GameObject:
   - component: {fileID: 23869264735899674}
   m_Layer: 0
   m_Name: street_city_fill_001
-  m_TagString: Untagged
+  m_TagString: Map
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2303,7 +2303,7 @@ GameObject:
   - component: {fileID: 23796769931029892}
   m_Layer: 0
   m_Name: street_straight_001
-  m_TagString: Untagged
+  m_TagString: Map
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2336,7 +2336,7 @@ GameObject:
   - component: {fileID: 23296034562069650}
   m_Layer: 0
   m_Name: street_straight_001
-  m_TagString: Untagged
+  m_TagString: Map
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2369,7 +2369,7 @@ GameObject:
   - component: {fileID: 23729581969999386}
   m_Layer: 0
   m_Name: street_city_fill_001
-  m_TagString: Untagged
+  m_TagString: Map
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2386,7 +2386,7 @@ GameObject:
   - component: {fileID: 23303214130026560}
   m_Layer: 0
   m_Name: street_city_fill_001
-  m_TagString: Untagged
+  m_TagString: Map
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2401,6 +2401,7 @@ GameObject:
   - component: {fileID: 4956940521788148}
   - component: {fileID: 95652968725083776}
   - component: {fileID: 114362197215840328}
+  - component: {fileID: 65445883316825938}
   m_Layer: 0
   m_Name: street_congress_center_003(Clone)
   m_TagString: Map
@@ -2420,7 +2421,7 @@ GameObject:
   - component: {fileID: 23724141845734658}
   m_Layer: 0
   m_Name: street_city_fill_001
-  m_TagString: Untagged
+  m_TagString: Map
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2453,7 +2454,7 @@ GameObject:
   - component: {fileID: 23681647728050424}
   m_Layer: 0
   m_Name: street_city_fill_001
-  m_TagString: Untagged
+  m_TagString: Map
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2470,7 +2471,7 @@ GameObject:
   - component: {fileID: 23172298266602394}
   m_Layer: 0
   m_Name: street_city_fill_001
-  m_TagString: Untagged
+  m_TagString: Map
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2487,7 +2488,7 @@ GameObject:
   - component: {fileID: 23888184580594082}
   m_Layer: 0
   m_Name: street_straight_001
-  m_TagString: Untagged
+  m_TagString: Map
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2536,7 +2537,7 @@ GameObject:
   - component: {fileID: 23211538076321838}
   m_Layer: 0
   m_Name: street_city_fill_001
-  m_TagString: Untagged
+  m_TagString: Map
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2617,7 +2618,7 @@ GameObject:
   - component: {fileID: 23403129275090230}
   m_Layer: 0
   m_Name: pCube93
-  m_TagString: Untagged
+  m_TagString: Map
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2634,7 +2635,7 @@ GameObject:
   - component: {fileID: 23919068876675594}
   m_Layer: 0
   m_Name: street_city_fill_001
-  m_TagString: Untagged
+  m_TagString: Map
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2651,7 +2652,7 @@ GameObject:
   - component: {fileID: 23790404667266626}
   m_Layer: 0
   m_Name: pCube95
-  m_TagString: Untagged
+  m_TagString: Map
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2700,7 +2701,7 @@ GameObject:
   - component: {fileID: 23319046719598730}
   m_Layer: 0
   m_Name: street_city_fill_001
-  m_TagString: Untagged
+  m_TagString: Map
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2733,7 +2734,7 @@ GameObject:
   - component: {fileID: 23022290556664536}
   m_Layer: 0
   m_Name: street_straight_001
-  m_TagString: Untagged
+  m_TagString: Map
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2750,7 +2751,7 @@ GameObject:
   - component: {fileID: 23405537285485766}
   m_Layer: 0
   m_Name: street_shop_001
-  m_TagString: Untagged
+  m_TagString: Map
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2783,7 +2784,7 @@ GameObject:
   - component: {fileID: 23457732504714338}
   m_Layer: 0
   m_Name: street_city_fill_001
-  m_TagString: Untagged
+  m_TagString: Map
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2816,7 +2817,7 @@ GameObject:
   - component: {fileID: 23466607879658200}
   m_Layer: 0
   m_Name: pCube86
-  m_TagString: Untagged
+  m_TagString: Map
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2863,7 +2864,7 @@ GameObject:
   - component: {fileID: 4989584085839692}
   - component: {fileID: 95857710847828958}
   - component: {fileID: 114965382551110172}
-  - component: {fileID: 65329972804322192}
+  - component: {fileID: 65248984199914780}
   m_Layer: 0
   m_Name: street_shop_001 1(Clone)
   m_TagString: Map
@@ -2883,7 +2884,7 @@ GameObject:
   - component: {fileID: 23109425620441176}
   m_Layer: 0
   m_Name: street_city_fill_001
-  m_TagString: Untagged
+  m_TagString: Map
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2900,7 +2901,7 @@ GameObject:
   - component: {fileID: 23332502042550216}
   m_Layer: 0
   m_Name: street_city_fill_001
-  m_TagString: Untagged
+  m_TagString: Map
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2933,7 +2934,7 @@ GameObject:
   - component: {fileID: 23728883170937010}
   m_Layer: 0
   m_Name: street_city_fill_001
-  m_TagString: Untagged
+  m_TagString: Map
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2950,7 +2951,7 @@ GameObject:
   - component: {fileID: 23786156542974644}
   m_Layer: 0
   m_Name: street_city_fill_001
-  m_TagString: Untagged
+  m_TagString: Map
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3047,7 +3048,7 @@ GameObject:
   - component: {fileID: 23626469505905592}
   m_Layer: 0
   m_Name: street_city_fill_001
-  m_TagString: Untagged
+  m_TagString: Map
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3080,7 +3081,7 @@ GameObject:
   - component: {fileID: 23248418769882598}
   m_Layer: 0
   m_Name: street_straight_001
-  m_TagString: Untagged
+  m_TagString: Map
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3097,7 +3098,7 @@ GameObject:
   - component: {fileID: 23755232362133190}
   m_Layer: 0
   m_Name: street_city_fill_001
-  m_TagString: Untagged
+  m_TagString: Map
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3114,7 +3115,7 @@ GameObject:
   - component: {fileID: 23920592791660560}
   m_Layer: 0
   m_Name: street_city_fill_001
-  m_TagString: Untagged
+  m_TagString: Map
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3131,7 +3132,7 @@ GameObject:
   - component: {fileID: 23131841517851626}
   m_Layer: 0
   m_Name: street_city_fill_001
-  m_TagString: Untagged
+  m_TagString: Map
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3180,7 +3181,7 @@ GameObject:
   - component: {fileID: 23619153612678946}
   m_Layer: 0
   m_Name: street_shop_001
-  m_TagString: Untagged
+  m_TagString: Map
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3197,7 +3198,7 @@ GameObject:
   - component: {fileID: 23611067383125836}
   m_Layer: 0
   m_Name: street_city_fill_001
-  m_TagString: Untagged
+  m_TagString: Map
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3214,7 +3215,7 @@ GameObject:
   - component: {fileID: 23701242282166298}
   m_Layer: 0
   m_Name: street_city_fill_001
-  m_TagString: Untagged
+  m_TagString: Map
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3263,7 +3264,7 @@ GameObject:
   - component: {fileID: 23723476730145322}
   m_Layer: 0
   m_Name: pCube83
-  m_TagString: Untagged
+  m_TagString: Map
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3280,7 +3281,7 @@ GameObject:
   - component: {fileID: 23555013753961570}
   m_Layer: 0
   m_Name: street_city_fill_001
-  m_TagString: Untagged
+  m_TagString: Map
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3329,7 +3330,7 @@ GameObject:
   - component: {fileID: 23897175120650196}
   m_Layer: 0
   m_Name: street_straight_001
-  m_TagString: Untagged
+  m_TagString: Map
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3362,7 +3363,7 @@ GameObject:
   - component: {fileID: 23011257942379052}
   m_Layer: 0
   m_Name: street_straight_001
-  m_TagString: Untagged
+  m_TagString: Map
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3395,7 +3396,7 @@ GameObject:
   - component: {fileID: 23676432601797676}
   m_Layer: 0
   m_Name: street_straight_001
-  m_TagString: Untagged
+  m_TagString: Map
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3444,7 +3445,7 @@ GameObject:
   - component: {fileID: 23451127777689988}
   m_Layer: 0
   m_Name: street_straight_001
-  m_TagString: Untagged
+  m_TagString: Map
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3461,7 +3462,7 @@ GameObject:
   - component: {fileID: 23869360750059254}
   m_Layer: 0
   m_Name: street_city_fill_001
-  m_TagString: Untagged
+  m_TagString: Map
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3478,7 +3479,7 @@ GameObject:
   - component: {fileID: 23485787868733396}
   m_Layer: 0
   m_Name: street_city_fill_001
-  m_TagString: Untagged
+  m_TagString: Map
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3495,7 +3496,7 @@ GameObject:
   - component: {fileID: 23999031284365036}
   m_Layer: 0
   m_Name: street_city_fill_001
-  m_TagString: Untagged
+  m_TagString: Map
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3528,7 +3529,7 @@ GameObject:
   - component: {fileID: 23739445371772714}
   m_Layer: 0
   m_Name: street_city_fill_001
-  m_TagString: Untagged
+  m_TagString: Map
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3561,7 +3562,7 @@ GameObject:
   - component: {fileID: 23063958149963664}
   m_Layer: 0
   m_Name: street_city_fill_001
-  m_TagString: Untagged
+  m_TagString: Map
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3626,7 +3627,7 @@ GameObject:
   - component: {fileID: 23155435887296050}
   m_Layer: 0
   m_Name: street_city_fill_001
-  m_TagString: Untagged
+  m_TagString: Map
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3643,7 +3644,7 @@ GameObject:
   - component: {fileID: 23249080621850694}
   m_Layer: 0
   m_Name: street_straight_001
-  m_TagString: Untagged
+  m_TagString: Map
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3660,7 +3661,7 @@ GameObject:
   - component: {fileID: 23668481034793210}
   m_Layer: 0
   m_Name: street_city_fill_001
-  m_TagString: Untagged
+  m_TagString: Map
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3693,7 +3694,7 @@ GameObject:
   - component: {fileID: 23472911499364994}
   m_Layer: 0
   m_Name: street_city_fill_001
-  m_TagString: Untagged
+  m_TagString: Map
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3710,7 +3711,7 @@ GameObject:
   - component: {fileID: 23346192631310208}
   m_Layer: 0
   m_Name: street_city_fill_001
-  m_TagString: Untagged
+  m_TagString: Map
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3727,7 +3728,7 @@ GameObject:
   - component: {fileID: 23361133328640122}
   m_Layer: 0
   m_Name: street_city_fill_001
-  m_TagString: Untagged
+  m_TagString: Map
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3744,7 +3745,7 @@ GameObject:
   - component: {fileID: 23739906846427320}
   m_Layer: 0
   m_Name: street_city_fill_001
-  m_TagString: Untagged
+  m_TagString: Map
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3777,7 +3778,7 @@ GameObject:
   - component: {fileID: 23502656355270608}
   m_Layer: 0
   m_Name: street_straight_001
-  m_TagString: Untagged
+  m_TagString: Map
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3794,7 +3795,7 @@ GameObject:
   - component: {fileID: 23900471069873140}
   m_Layer: 0
   m_Name: street_straight_001
-  m_TagString: Untagged
+  m_TagString: Map
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3811,7 +3812,7 @@ GameObject:
   - component: {fileID: 23936276144577964}
   m_Layer: 0
   m_Name: pCube90
-  m_TagString: Untagged
+  m_TagString: Map
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3828,7 +3829,7 @@ GameObject:
   - component: {fileID: 23200896625132426}
   m_Layer: 0
   m_Name: street_city_fill_001
-  m_TagString: Untagged
+  m_TagString: Map
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3861,7 +3862,7 @@ GameObject:
   - component: {fileID: 23895924866155110}
   m_Layer: 0
   m_Name: street_city_fill_001
-  m_TagString: Untagged
+  m_TagString: Map
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3910,7 +3911,7 @@ GameObject:
   - component: {fileID: 23314246262058366}
   m_Layer: 0
   m_Name: street_city_fill_001
-  m_TagString: Untagged
+  m_TagString: Map
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3927,7 +3928,7 @@ GameObject:
   - component: {fileID: 23222753787671444}
   m_Layer: 0
   m_Name: pCube79
-  m_TagString: Untagged
+  m_TagString: Map
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4008,7 +4009,7 @@ GameObject:
   - component: {fileID: 23374461013973188}
   m_Layer: 0
   m_Name: street_straight_001
-  m_TagString: Untagged
+  m_TagString: Map
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4041,7 +4042,7 @@ GameObject:
   - component: {fileID: 23283815298415608}
   m_Layer: 0
   m_Name: street_straight_001
-  m_TagString: Untagged
+  m_TagString: Map
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4074,7 +4075,7 @@ GameObject:
   - component: {fileID: 23819216238390804}
   m_Layer: 0
   m_Name: street_city_fill_001
-  m_TagString: Untagged
+  m_TagString: Map
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4123,7 +4124,7 @@ GameObject:
   - component: {fileID: 23835579662309894}
   m_Layer: 0
   m_Name: street_city_fill_001
-  m_TagString: Untagged
+  m_TagString: Map
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4140,7 +4141,7 @@ GameObject:
   - component: {fileID: 23000287935588556}
   m_Layer: 0
   m_Name: street_city_fill_001
-  m_TagString: Untagged
+  m_TagString: Map
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4157,7 +4158,7 @@ GameObject:
   - component: {fileID: 23992531434538114}
   m_Layer: 0
   m_Name: street_city_fill_001
-  m_TagString: Untagged
+  m_TagString: Map
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4172,7 +4173,7 @@ GameObject:
   - component: {fileID: 4086577607347306}
   - component: {fileID: 95633378770234232}
   - component: {fileID: 114698749788733330}
-  - component: {fileID: 65897010438602362}
+  - component: {fileID: 65118681091260760}
   m_Layer: 0
   m_Name: street_shop_001 1(Clone)
   m_TagString: Map
@@ -4208,7 +4209,7 @@ GameObject:
   - component: {fileID: 23595553801685220}
   m_Layer: 0
   m_Name: street_city_fill_001
-  m_TagString: Untagged
+  m_TagString: Map
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4321,7 +4322,7 @@ GameObject:
   - component: {fileID: 23701904056526672}
   m_Layer: 0
   m_Name: street_straight_001
-  m_TagString: Untagged
+  m_TagString: Map
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4370,7 +4371,7 @@ GameObject:
   - component: {fileID: 23912566419822574}
   m_Layer: 0
   m_Name: street_city_fill_001
-  m_TagString: Untagged
+  m_TagString: Map
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4387,7 +4388,7 @@ GameObject:
   - component: {fileID: 23952236797839230}
   m_Layer: 0
   m_Name: pSphere1
-  m_TagString: Untagged
+  m_TagString: Map
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4404,7 +4405,7 @@ GameObject:
   - component: {fileID: 23995586646820922}
   m_Layer: 0
   m_Name: street_city_fill_001
-  m_TagString: Untagged
+  m_TagString: Map
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4469,7 +4470,7 @@ GameObject:
   - component: {fileID: 23288906469079452}
   m_Layer: 0
   m_Name: pCube76
-  m_TagString: Untagged
+  m_TagString: Map
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4534,7 +4535,7 @@ GameObject:
   - component: {fileID: 23218732430625288}
   m_Layer: 0
   m_Name: street_city_fill_001
-  m_TagString: Untagged
+  m_TagString: Map
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4567,7 +4568,7 @@ GameObject:
   - component: {fileID: 23083253713205450}
   m_Layer: 0
   m_Name: street_city_fill_001
-  m_TagString: Untagged
+  m_TagString: Map
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4600,7 +4601,7 @@ GameObject:
   - component: {fileID: 23708971778698696}
   m_Layer: 0
   m_Name: street_straight_001
-  m_TagString: Untagged
+  m_TagString: Map
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4617,7 +4618,7 @@ GameObject:
   - component: {fileID: 23545907331939380}
   m_Layer: 0
   m_Name: street_city_fill_001
-  m_TagString: Untagged
+  m_TagString: Map
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4650,7 +4651,7 @@ GameObject:
   - component: {fileID: 23160019333175870}
   m_Layer: 0
   m_Name: street_city_fill_001
-  m_TagString: Untagged
+  m_TagString: Map
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4667,7 +4668,7 @@ GameObject:
   - component: {fileID: 23592701809999844}
   m_Layer: 0
   m_Name: street_city_fill_001
-  m_TagString: Untagged
+  m_TagString: Map
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4700,7 +4701,7 @@ GameObject:
   - component: {fileID: 23834678043362058}
   m_Layer: 0
   m_Name: pCube96
-  m_TagString: Untagged
+  m_TagString: Map
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4733,7 +4734,7 @@ GameObject:
   - component: {fileID: 23686098404557730}
   m_Layer: 0
   m_Name: pPlane23
-  m_TagString: Untagged
+  m_TagString: Map
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4750,7 +4751,7 @@ GameObject:
   - component: {fileID: 23558858090301128}
   m_Layer: 0
   m_Name: street_city_fill_001
-  m_TagString: Untagged
+  m_TagString: Map
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4767,7 +4768,7 @@ GameObject:
   - component: {fileID: 23740782317303922}
   m_Layer: 0
   m_Name: street_city_fill_001
-  m_TagString: Untagged
+  m_TagString: Map
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4800,7 +4801,7 @@ GameObject:
   - component: {fileID: 23069860884820722}
   m_Layer: 0
   m_Name: street_city_fill_001
-  m_TagString: Untagged
+  m_TagString: Map
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4817,7 +4818,7 @@ GameObject:
   - component: {fileID: 23925427103022608}
   m_Layer: 0
   m_Name: street_straight_001
-  m_TagString: Untagged
+  m_TagString: Map
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4850,7 +4851,7 @@ GameObject:
   - component: {fileID: 23406274956054754}
   m_Layer: 0
   m_Name: pPlane19
-  m_TagString: Untagged
+  m_TagString: Map
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4947,7 +4948,7 @@ GameObject:
   - component: {fileID: 23399908906228644}
   m_Layer: 0
   m_Name: street_city_fill_001
-  m_TagString: Untagged
+  m_TagString: Map
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4964,7 +4965,7 @@ GameObject:
   - component: {fileID: 23618829926172530}
   m_Layer: 0
   m_Name: street_city_fill_001
-  m_TagString: Untagged
+  m_TagString: Map
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5013,7 +5014,7 @@ GameObject:
   - component: {fileID: 23169392284937114}
   m_Layer: 0
   m_Name: street_crossing_002
-  m_TagString: Untagged
+  m_TagString: Map
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5030,7 +5031,7 @@ GameObject:
   - component: {fileID: 23786775944431452}
   m_Layer: 0
   m_Name: street_city_fill_001
-  m_TagString: Untagged
+  m_TagString: Map
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5047,7 +5048,7 @@ GameObject:
   - component: {fileID: 23887872443623554}
   m_Layer: 0
   m_Name: street_city_fill_001
-  m_TagString: Untagged
+  m_TagString: Map
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5080,7 +5081,7 @@ GameObject:
   - component: {fileID: 23572982612958670}
   m_Layer: 0
   m_Name: street_city_fill_001
-  m_TagString: Untagged
+  m_TagString: Map
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5113,7 +5114,7 @@ GameObject:
   - component: {fileID: 23003551886270524}
   m_Layer: 0
   m_Name: street_city_fill_001
-  m_TagString: Untagged
+  m_TagString: Map
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5146,7 +5147,7 @@ GameObject:
   - component: {fileID: 23482294767993750}
   m_Layer: 0
   m_Name: street_city_fill_001
-  m_TagString: Untagged
+  m_TagString: Map
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5179,7 +5180,7 @@ GameObject:
   - component: {fileID: 23034701517345668}
   m_Layer: 0
   m_Name: street_city_fill_001
-  m_TagString: Untagged
+  m_TagString: Map
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5212,7 +5213,7 @@ GameObject:
   - component: {fileID: 23663547520747764}
   m_Layer: 0
   m_Name: street_city_fill_001
-  m_TagString: Untagged
+  m_TagString: Map
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5245,7 +5246,7 @@ GameObject:
   - component: {fileID: 23128266216821830}
   m_Layer: 0
   m_Name: street_straight_001
-  m_TagString: Untagged
+  m_TagString: Map
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5278,7 +5279,7 @@ GameObject:
   - component: {fileID: 23476475722075900}
   m_Layer: 0
   m_Name: street_city_fill_001
-  m_TagString: Untagged
+  m_TagString: Map
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5295,7 +5296,7 @@ GameObject:
   - component: {fileID: 23244443683208534}
   m_Layer: 0
   m_Name: street_straight_001
-  m_TagString: Untagged
+  m_TagString: Map
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5312,7 +5313,7 @@ GameObject:
   - component: {fileID: 23894605593030862}
   m_Layer: 0
   m_Name: pCube82
-  m_TagString: Untagged
+  m_TagString: Map
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5345,7 +5346,7 @@ GameObject:
   - component: {fileID: 23621695071652948}
   m_Layer: 0
   m_Name: street_city_fill_001
-  m_TagString: Untagged
+  m_TagString: Map
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5362,7 +5363,7 @@ GameObject:
   - component: {fileID: 23425888196686654}
   m_Layer: 0
   m_Name: street_city_fill_001
-  m_TagString: Untagged
+  m_TagString: Map
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5379,7 +5380,7 @@ GameObject:
   - component: {fileID: 23922490134125090}
   m_Layer: 0
   m_Name: street_straight_001
-  m_TagString: Untagged
+  m_TagString: Map
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5396,7 +5397,7 @@ GameObject:
   - component: {fileID: 23795981991007168}
   m_Layer: 0
   m_Name: street_city_fill_001
-  m_TagString: Untagged
+  m_TagString: Map
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5429,7 +5430,7 @@ GameObject:
   - component: {fileID: 23041945913848460}
   m_Layer: 0
   m_Name: street_city_fill_001
-  m_TagString: Untagged
+  m_TagString: Map
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5446,7 +5447,7 @@ GameObject:
   - component: {fileID: 23140930985275404}
   m_Layer: 0
   m_Name: street_city_fill_001
-  m_TagString: Untagged
+  m_TagString: Map
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5463,7 +5464,7 @@ GameObject:
   - component: {fileID: 23093776767880382}
   m_Layer: 0
   m_Name: pCube89
-  m_TagString: Untagged
+  m_TagString: Map
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5480,7 +5481,7 @@ GameObject:
   - component: {fileID: 23658149962697320}
   m_Layer: 0
   m_Name: street_city_fill_001
-  m_TagString: Untagged
+  m_TagString: Map
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5497,7 +5498,7 @@ GameObject:
   - component: {fileID: 23502058121152460}
   m_Layer: 0
   m_Name: pCube85
-  m_TagString: Untagged
+  m_TagString: Map
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5514,7 +5515,7 @@ GameObject:
   - component: {fileID: 23655865981596002}
   m_Layer: 0
   m_Name: street_city_fill_001
-  m_TagString: Untagged
+  m_TagString: Map
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5531,7 +5532,7 @@ GameObject:
   - component: {fileID: 23332409221783058}
   m_Layer: 0
   m_Name: street_straight_001
-  m_TagString: Untagged
+  m_TagString: Map
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5548,7 +5549,7 @@ GameObject:
   - component: {fileID: 23999805104327828}
   m_Layer: 0
   m_Name: street_straight_001
-  m_TagString: Untagged
+  m_TagString: Map
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5581,7 +5582,7 @@ GameObject:
   - component: {fileID: 23999200946716210}
   m_Layer: 0
   m_Name: street_city_fill_001
-  m_TagString: Untagged
+  m_TagString: Map
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5598,7 +5599,7 @@ GameObject:
   - component: {fileID: 23952673147407970}
   m_Layer: 0
   m_Name: street_city_fill_001
-  m_TagString: Untagged
+  m_TagString: Map
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5615,7 +5616,7 @@ GameObject:
   - component: {fileID: 23053962843394272}
   m_Layer: 0
   m_Name: street_shop_001
-  m_TagString: Untagged
+  m_TagString: Map
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5632,7 +5633,7 @@ GameObject:
   - component: {fileID: 23365324173824926}
   m_Layer: 0
   m_Name: street_straight_001
-  m_TagString: Untagged
+  m_TagString: Map
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5665,7 +5666,7 @@ GameObject:
   - component: {fileID: 23103215312120116}
   m_Layer: 0
   m_Name: street_city_fill_001
-  m_TagString: Untagged
+  m_TagString: Map
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5698,7 +5699,7 @@ GameObject:
   - component: {fileID: 23225717706427258}
   m_Layer: 0
   m_Name: street_straight_001
-  m_TagString: Untagged
+  m_TagString: Map
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5827,7 +5828,7 @@ GameObject:
   - component: {fileID: 23330412330453066}
   m_Layer: 0
   m_Name: street_straight_001
-  m_TagString: Untagged
+  m_TagString: Map
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5844,7 +5845,7 @@ GameObject:
   - component: {fileID: 23019080290438494}
   m_Layer: 0
   m_Name: street_straight_001
-  m_TagString: Untagged
+  m_TagString: Map
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5877,7 +5878,7 @@ GameObject:
   - component: {fileID: 23781544898279000}
   m_Layer: 0
   m_Name: street_crossing_002
-  m_TagString: Untagged
+  m_TagString: Map
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5942,7 +5943,7 @@ GameObject:
   - component: {fileID: 23777971642310022}
   m_Layer: 0
   m_Name: street_city_fill_001
-  m_TagString: Untagged
+  m_TagString: Map
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5991,7 +5992,7 @@ GameObject:
   - component: {fileID: 23871495449053244}
   m_Layer: 0
   m_Name: street_city_fill_001
-  m_TagString: Untagged
+  m_TagString: Map
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6008,7 +6009,7 @@ GameObject:
   - component: {fileID: 23121759173694020}
   m_Layer: 0
   m_Name: street_city_fill_001
-  m_TagString: Untagged
+  m_TagString: Map
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6025,7 +6026,7 @@ GameObject:
   - component: {fileID: 23922007208694642}
   m_Layer: 0
   m_Name: street_city_fill_001
-  m_TagString: Untagged
+  m_TagString: Map
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6042,7 +6043,7 @@ GameObject:
   - component: {fileID: 23091514701906730}
   m_Layer: 0
   m_Name: street_city_fill_001
-  m_TagString: Untagged
+  m_TagString: Map
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6075,7 +6076,7 @@ GameObject:
   - component: {fileID: 23818357372990094}
   m_Layer: 0
   m_Name: street_straight_001
-  m_TagString: Untagged
+  m_TagString: Map
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6124,7 +6125,7 @@ GameObject:
   - component: {fileID: 23935836104662052}
   m_Layer: 0
   m_Name: street_city_fill_001
-  m_TagString: Untagged
+  m_TagString: Map
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6157,7 +6158,7 @@ GameObject:
   - component: {fileID: 23468556321023582}
   m_Layer: 0
   m_Name: pCube92
-  m_TagString: Untagged
+  m_TagString: Map
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6174,7 +6175,7 @@ GameObject:
   - component: {fileID: 23201228667287130}
   m_Layer: 0
   m_Name: street_city_fill_001
-  m_TagString: Untagged
+  m_TagString: Map
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6207,7 +6208,7 @@ GameObject:
   - component: {fileID: 23590026564983452}
   m_Layer: 0
   m_Name: street_crossing_002
-  m_TagString: Untagged
+  m_TagString: Map
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6224,7 +6225,7 @@ GameObject:
   - component: {fileID: 23214879868528534}
   m_Layer: 0
   m_Name: street_city_fill_001
-  m_TagString: Untagged
+  m_TagString: Map
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6241,7 +6242,7 @@ GameObject:
   - component: {fileID: 23660680800423380}
   m_Layer: 0
   m_Name: street_city_fill_001
-  m_TagString: Untagged
+  m_TagString: Map
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6258,7 +6259,7 @@ GameObject:
   - component: {fileID: 23722807303649064}
   m_Layer: 0
   m_Name: street_straight_001
-  m_TagString: Untagged
+  m_TagString: Map
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6275,7 +6276,7 @@ GameObject:
   - component: {fileID: 23874511816061106}
   m_Layer: 0
   m_Name: street_city_fill_001
-  m_TagString: Untagged
+  m_TagString: Map
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6308,7 +6309,7 @@ GameObject:
   - component: {fileID: 23330482777460530}
   m_Layer: 0
   m_Name: street_city_fill_001
-  m_TagString: Untagged
+  m_TagString: Map
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6325,7 +6326,7 @@ GameObject:
   - component: {fileID: 23097507797771018}
   m_Layer: 0
   m_Name: street_city_fill_001
-  m_TagString: Untagged
+  m_TagString: Map
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6342,7 +6343,7 @@ GameObject:
   - component: {fileID: 23905625602106014}
   m_Layer: 0
   m_Name: street_straight_001
-  m_TagString: Untagged
+  m_TagString: Map
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6359,7 +6360,7 @@ GameObject:
   - component: {fileID: 23972445237617090}
   m_Layer: 0
   m_Name: street_crossing_002
-  m_TagString: Untagged
+  m_TagString: Map
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6376,7 +6377,7 @@ GameObject:
   - component: {fileID: 23618430135592088}
   m_Layer: 0
   m_Name: street_city_fill_001
-  m_TagString: Untagged
+  m_TagString: Map
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6393,7 +6394,7 @@ GameObject:
   - component: {fileID: 23981698512407340}
   m_Layer: 0
   m_Name: street_city_fill_001
-  m_TagString: Untagged
+  m_TagString: Map
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6410,7 +6411,7 @@ GameObject:
   - component: {fileID: 23541014588422062}
   m_Layer: 0
   m_Name: pCube98
-  m_TagString: Untagged
+  m_TagString: Map
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6427,7 +6428,7 @@ GameObject:
   - component: {fileID: 23290531765868078}
   m_Layer: 0
   m_Name: street_city_fill_001
-  m_TagString: Untagged
+  m_TagString: Map
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6476,7 +6477,7 @@ GameObject:
   - component: {fileID: 23167455987521068}
   m_Layer: 0
   m_Name: street_straight_001
-  m_TagString: Untagged
+  m_TagString: Map
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6509,7 +6510,7 @@ GameObject:
   - component: {fileID: 23478492839897276}
   m_Layer: 0
   m_Name: pCube80
-  m_TagString: Untagged
+  m_TagString: Map
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6526,7 +6527,7 @@ GameObject:
   - component: {fileID: 23486604771059464}
   m_Layer: 0
   m_Name: street_city_fill_001
-  m_TagString: Untagged
+  m_TagString: Map
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6543,7 +6544,7 @@ GameObject:
   - component: {fileID: 23993532192275750}
   m_Layer: 0
   m_Name: street_city_fill_001
-  m_TagString: Untagged
+  m_TagString: Map
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6672,7 +6673,7 @@ GameObject:
   - component: {fileID: 23055038220482254}
   m_Layer: 0
   m_Name: street_straight_001
-  m_TagString: Untagged
+  m_TagString: Map
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6689,7 +6690,7 @@ GameObject:
   - component: {fileID: 23648971339896874}
   m_Layer: 0
   m_Name: street_straight_001
-  m_TagString: Untagged
+  m_TagString: Map
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6706,7 +6707,7 @@ GameObject:
   - component: {fileID: 23404891996039940}
   m_Layer: 0
   m_Name: street_city_fill_001
-  m_TagString: Untagged
+  m_TagString: Map
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6723,7 +6724,7 @@ GameObject:
   - component: {fileID: 23448762973486636}
   m_Layer: 0
   m_Name: street_straight_001
-  m_TagString: Untagged
+  m_TagString: Map
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6756,7 +6757,7 @@ GameObject:
   - component: {fileID: 23441646299959648}
   m_Layer: 0
   m_Name: street_city_fill_001
-  m_TagString: Untagged
+  m_TagString: Map
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6789,7 +6790,7 @@ GameObject:
   - component: {fileID: 23904015715068968}
   m_Layer: 0
   m_Name: street_city_fill_001
-  m_TagString: Untagged
+  m_TagString: Map
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6806,7 +6807,7 @@ GameObject:
   - component: {fileID: 23051351645647712}
   m_Layer: 0
   m_Name: street_straight_001
-  m_TagString: Untagged
+  m_TagString: Map
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6821,7 +6822,7 @@ GameObject:
   - component: {fileID: 4312784303343874}
   m_Layer: 0
   m_Name: street_congress_center_003
-  m_TagString: Untagged
+  m_TagString: Map
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6834,6 +6835,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4501242676584992}
+  - component: {fileID: 65105325833958414}
   m_Layer: 0
   m_Name: Stage1-1
   m_TagString: Map
@@ -6869,7 +6871,7 @@ GameObject:
   - component: {fileID: 23869051255015672}
   m_Layer: 0
   m_Name: street_city_fill_001
-  m_TagString: Untagged
+  m_TagString: Map
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6886,7 +6888,7 @@ GameObject:
   - component: {fileID: 23683561649274238}
   m_Layer: 0
   m_Name: pCube81
-  m_TagString: Untagged
+  m_TagString: Map
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6935,7 +6937,7 @@ GameObject:
   - component: {fileID: 23691470447461370}
   m_Layer: 0
   m_Name: street_city_fill_001
-  m_TagString: Untagged
+  m_TagString: Map
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6984,7 +6986,7 @@ GameObject:
   - component: {fileID: 23086544576701354}
   m_Layer: 0
   m_Name: street_shop_001
-  m_TagString: Untagged
+  m_TagString: Map
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7001,7 +7003,7 @@ GameObject:
   - component: {fileID: 23007438343458048}
   m_Layer: 0
   m_Name: street_city_fill_001
-  m_TagString: Untagged
+  m_TagString: Map
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7066,7 +7068,7 @@ GameObject:
   - component: {fileID: 23431624662827874}
   m_Layer: 0
   m_Name: street_straight_001
-  m_TagString: Untagged
+  m_TagString: Map
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7099,7 +7101,7 @@ GameObject:
   - component: {fileID: 23566350811408788}
   m_Layer: 0
   m_Name: street_city_fill_001
-  m_TagString: Untagged
+  m_TagString: Map
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7116,7 +7118,7 @@ GameObject:
   - component: {fileID: 23984806429929788}
   m_Layer: 0
   m_Name: street_city_fill_001
-  m_TagString: Untagged
+  m_TagString: Map
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7133,7 +7135,7 @@ GameObject:
   - component: {fileID: 23319442802578198}
   m_Layer: 0
   m_Name: street_city_fill_001
-  m_TagString: Untagged
+  m_TagString: Map
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7150,7 +7152,7 @@ GameObject:
   - component: {fileID: 23812952621144260}
   m_Layer: 0
   m_Name: street_straight_001
-  m_TagString: Untagged
+  m_TagString: Map
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7167,7 +7169,7 @@ GameObject:
   - component: {fileID: 23357639094096890}
   m_Layer: 0
   m_Name: street_crossing_001
-  m_TagString: Untagged
+  m_TagString: Map
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7184,7 +7186,7 @@ GameObject:
   - component: {fileID: 23211480514954198}
   m_Layer: 0
   m_Name: street_city_fill_001
-  m_TagString: Untagged
+  m_TagString: Map
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7201,7 +7203,7 @@ GameObject:
   - component: {fileID: 23933637265984430}
   m_Layer: 0
   m_Name: street_city_fill_001
-  m_TagString: Untagged
+  m_TagString: Map
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7282,7 +7284,7 @@ GameObject:
   - component: {fileID: 23708795877319400}
   m_Layer: 0
   m_Name: street_city_fill_001
-  m_TagString: Untagged
+  m_TagString: Map
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7299,7 +7301,7 @@ GameObject:
   - component: {fileID: 23061415119720682}
   m_Layer: 0
   m_Name: street_city_fill_001
-  m_TagString: Untagged
+  m_TagString: Map
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7316,7 +7318,7 @@ GameObject:
   - component: {fileID: 23645694616742386}
   m_Layer: 0
   m_Name: street_city_fill_001
-  m_TagString: Untagged
+  m_TagString: Map
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7349,7 +7351,7 @@ GameObject:
   - component: {fileID: 23447886009972938}
   m_Layer: 0
   m_Name: street_city_fill_001
-  m_TagString: Untagged
+  m_TagString: Map
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7366,7 +7368,7 @@ GameObject:
   - component: {fileID: 23805891210843806}
   m_Layer: 0
   m_Name: street_straight_001
-  m_TagString: Untagged
+  m_TagString: Map
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7383,7 +7385,7 @@ GameObject:
   - component: {fileID: 23804660757463876}
   m_Layer: 0
   m_Name: street_city_fill_001
-  m_TagString: Untagged
+  m_TagString: Map
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7448,7 +7450,7 @@ GameObject:
   - component: {fileID: 23180887226753756}
   m_Layer: 0
   m_Name: street_straight_001
-  m_TagString: Untagged
+  m_TagString: Map
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7481,7 +7483,7 @@ GameObject:
   - component: {fileID: 23781897498303346}
   m_Layer: 0
   m_Name: street_city_fill_001
-  m_TagString: Untagged
+  m_TagString: Map
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7498,7 +7500,7 @@ GameObject:
   - component: {fileID: 23027716249906896}
   m_Layer: 0
   m_Name: street_city_fill_001
-  m_TagString: Untagged
+  m_TagString: Map
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7515,7 +7517,7 @@ GameObject:
   - component: {fileID: 23582696887399450}
   m_Layer: 0
   m_Name: street_city_fill_001
-  m_TagString: Untagged
+  m_TagString: Map
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7532,7 +7534,7 @@ GameObject:
   - component: {fileID: 23477554898665854}
   m_Layer: 0
   m_Name: street_city_fill_001
-  m_TagString: Untagged
+  m_TagString: Map
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7597,7 +7599,7 @@ GameObject:
   - component: {fileID: 23776743582238174}
   m_Layer: 0
   m_Name: street_city_fill_001
-  m_TagString: Untagged
+  m_TagString: Map
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7662,7 +7664,7 @@ GameObject:
   - component: {fileID: 23761815301903316}
   m_Layer: 0
   m_Name: street_city_fill_001
-  m_TagString: Untagged
+  m_TagString: Map
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7695,7 +7697,7 @@ GameObject:
   - component: {fileID: 23136889067352470}
   m_Layer: 0
   m_Name: street_straight_001
-  m_TagString: Untagged
+  m_TagString: Map
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7712,7 +7714,7 @@ GameObject:
   - component: {fileID: 23005218321015050}
   m_Layer: 0
   m_Name: street_city_fill_001
-  m_TagString: Untagged
+  m_TagString: Map
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7729,7 +7731,7 @@ GameObject:
   - component: {fileID: 23731700468641180}
   m_Layer: 0
   m_Name: street_straight_001
-  m_TagString: Untagged
+  m_TagString: Map
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7762,7 +7764,7 @@ GameObject:
   - component: {fileID: 23664289010467302}
   m_Layer: 0
   m_Name: street_straight_001
-  m_TagString: Untagged
+  m_TagString: Map
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7811,7 +7813,7 @@ GameObject:
   - component: {fileID: 23371534175256966}
   m_Layer: 0
   m_Name: street_straight_001
-  m_TagString: Untagged
+  m_TagString: Map
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7828,7 +7830,7 @@ GameObject:
   - component: {fileID: 23218183562781294}
   m_Layer: 0
   m_Name: street_city_fill_001
-  m_TagString: Untagged
+  m_TagString: Map
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7861,7 +7863,7 @@ GameObject:
   - component: {fileID: 23818095418863546}
   m_Layer: 0
   m_Name: pCube87
-  m_TagString: Untagged
+  m_TagString: Map
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -24263,7 +24265,7 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1509381542048370}
   m_Mesh: {fileID: 4300030, guid: fe4caa62c1c8ec749ae02c7f85af1de0, type: 3}
---- !u!65 &65120304148853218
+--- !u!65 &65000465523861014
 BoxCollider:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -24275,19 +24277,7 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!65 &65329972804322192
-BoxCollider:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1427687694001746}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
---- !u!65 &65504479131778306
+--- !u!65 &65047163656206704
 BoxCollider:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -24299,7 +24289,19 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!65 &65897010438602362
+--- !u!65 &65105325833958414
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1890738781311942}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 14, y: 1, z: 14}
+  m_Center: {x: 7, y: 0, z: 7}
+--- !u!65 &65118681091260760
 BoxCollider:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -24310,6 +24312,30 @@ BoxCollider:
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!65 &65248984199914780
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1427687694001746}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!65 &65445883316825938
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1356458254986158}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 100, y: 100, z: 100}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!95 &95009776981575704
 Animator:
@@ -28150,6 +28176,7 @@ MonoBehaviour:
   MaxHealth: 100
   BuildingModels: []
   HealthSlider: {fileID: 0}
+  BuildingValue: 0
 --- !u!114 &114362197215840328
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -28164,6 +28191,7 @@ MonoBehaviour:
   MaxHealth: 500
   BuildingModels: []
   HealthSlider: {fileID: 0}
+  BuildingValue: 0
 --- !u!114 &114698749788733330
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -28178,6 +28206,7 @@ MonoBehaviour:
   MaxHealth: 100
   BuildingModels: []
   HealthSlider: {fileID: 0}
+  BuildingValue: 0
 --- !u!114 &114965382551110172
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -28192,6 +28221,7 @@ MonoBehaviour:
   MaxHealth: 100
   BuildingModels: []
   HealthSlider: {fileID: 0}
+  BuildingValue: 0
 --- !u!114 &114982208480307750
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -28206,3 +28236,4 @@ MonoBehaviour:
   MaxHealth: 100
   BuildingModels: []
   HealthSlider: {fileID: 0}
+  BuildingValue: 0
