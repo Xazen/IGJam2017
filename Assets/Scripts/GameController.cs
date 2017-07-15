@@ -1,9 +1,13 @@
-﻿using UnityEngine;
+﻿using System;
+using UnityEngine;
 using Zenject;
 
 public class GameController : ITickable
 {
     public int Budget = 1000;
+    public int CasualtyCounter;
+    public int RoundCasualties;
+
     public int[] WaveReward;
 	public const float RoundDuration = 20f;
 	public const float MercyDuration = 5f;
@@ -20,6 +24,8 @@ public class GameController : ITickable
 	
 	public delegate void EnemySpawnDelegate(int enemyCount);
 	public event EnemySpawnDelegate OnEnemySpawn;
+
+    public event Action<int> OnRoundEnding = i => { };
 	
 	private float _currentRoundDuration = 0f;
 	private int _round = 1;
@@ -82,9 +88,18 @@ public class GameController : ITickable
 		}
 		else
 		{
+		    CasualtyCounter += RoundCasualties;
+		    OnRoundEnding(RoundCasualties);
+            RoundCasualties = 0;
+
 			StartNextRound();
 		}
 	}
+
+    public void RegisterCasualty(int amount)
+    {
+        RoundCasualties += amount;
+    }
 
 	private void StartNextRound()
 	{
