@@ -23,6 +23,6 @@ public class PoliceButton : MonoBehaviour
 
     private void OnButtonClicked()
     {
-        _unitSpawnController.SetSelectedUnit(UnitPrefab.GetComponent<IUnit>());
+        _unitSpawnController.SetSelectedUnit(UnitPrefab.GetComponent<Unit>());
     }
 }

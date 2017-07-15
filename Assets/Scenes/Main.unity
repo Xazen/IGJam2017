@@ -223,7 +223,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 128.91249, y: -40.862503}
+  m_AnchoredPosition: {x: 128.91249, y: -44.1}
   m_SizeDelta: {x: 0, y: 79.274994}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &208432566
@@ -543,6 +543,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   MainCamera: {fileID: 405347360}
+  SpawnPossibleMaterial: {fileID: 2100000, guid: 10787919f576e4dafb16ab6f3e4b8140,
+    type: 2}
+  SpawnImpossibleMaterial: {fileID: 2100000, guid: 55cbc34f73b74446c965796bf2a7d355,
+    type: 2}
 --- !u!4 &492941480
 Transform:
   m_ObjectHideFlags: 0
@@ -838,6 +842,11 @@ Prefab:
       propertyPath: m_RootOrder
       value: 7
       objectReference: {fileID: 0}
+    - target: {fileID: 23633356198666364, guid: 924124d31da73434d8dbf044f13b4e97,
+        type: 2}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 9388a8e2b2df743dbb33b498e10ae42f, type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 924124d31da73434d8dbf044f13b4e97, type: 2}
   m_IsPrefabParent: 0
@@ -878,7 +887,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 39.637497, y: -40.862503}
+  m_AnchoredPosition: {x: 39.637497, y: -44.1}
   m_SizeDelta: {x: 0, y: 79.274994}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1455517571

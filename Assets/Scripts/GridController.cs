@@ -1,15 +1,14 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using System.IO;
+using System.Security.Cryptography.X509Certificates;
 using Assets.Scripts.Model;
 using UnityEngine;
 using Zenject;
 
 public class GridController: IInitializable
 {
-
     public Cell[,] Grid { get; set; }
-
 
     [SerializeField] private string _pathToMapFile;
 
@@ -24,7 +23,10 @@ public class GridController: IInitializable
         Grid = ParseMap(_pathToMapFile);
     }
 
-
+    public CellType GetCellType(int x, int y)
+    {
+        return Grid[x, y].Type;
+    }
 
     private Cell[,] ParseMap(string mapFilePath)
     {

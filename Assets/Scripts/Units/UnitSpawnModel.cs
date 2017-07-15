@@ -1,7 +1,7 @@
 ﻿public class UnitSpawnModel
 {
-    private IUnit _selectedUnit;
-    public IUnit SelectedUnit 
+    private Unit _selectedUnit;
+    public Unit SelectedUnit 
     {
         get
         {
@@ -9,7 +9,7 @@
         } 
     }
 
-    public void SetSelectedUnit(IUnit selectedUnit)
+    public void SetSelectedUnit(Unit selectedUnit)
     {
         _selectedUnit = selectedUnit;
     }

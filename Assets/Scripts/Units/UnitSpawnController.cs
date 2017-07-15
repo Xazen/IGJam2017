@@ -1,10 +1,16 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using Assets.Scripts.Model;
+using Zenject;
 
 public class UnitSpawnController
 {
 	private readonly UnitSpawnModel _unitSpawnModel;
+	private GridController _gridController;
+
+	[Inject]
+	public void Inject(GridController gridController)
+	{
+		_gridController = gridController;
+	}
 	
 	public UnitSpawnController()
 	{
@@ -16,13 +22,18 @@ public class UnitSpawnController
 		return _unitSpawnModel.SelectedUnit != null;
 	}
 
-	public void SetSelectedUnit(IUnit selectedUnit)
+	public void SetSelectedUnit(Unit selectedUnit)
 	{
 		_unitSpawnModel.SetSelectedUnit(selectedUnit);
 	}
 
-	public GameObject GetSelectedUnitPrefab()
+	public Unit GetSelectedUnitPrefab()
 	{
-		return _unitSpawnModel.SelectedUnit.GetModel();
+		return _unitSpawnModel.SelectedUnit;
+	}
+
+	public bool IsUnitSpawnPossibleAtGrid(int x, int y)
+	{
+		return _gridController.GetCellType(x, y) == CellType.Street;
 	}
 }
