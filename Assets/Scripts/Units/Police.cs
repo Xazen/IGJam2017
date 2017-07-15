@@ -9,15 +9,5 @@ public class Police : Unit
 		
 	}
 
-	private void OnTriggerStay(Collider other)
-	{
-		if (other.gameObject.tag.Equals(TagConstants.Enemy))
-		{
-			Rioter rioter = other.gameObject.GetComponent<Rioter>();
-			if (rioter != null)
-			{
-				rioter.TryTakeDamage(10);
-			}
-		}
-	}
+	
 }

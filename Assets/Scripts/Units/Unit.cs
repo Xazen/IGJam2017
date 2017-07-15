@@ -82,6 +82,7 @@ public abstract class Unit : MonoBehaviour
         if (rioter != null && !_destroyed)
         {
             GetDamage(rioter.TryAttack());
+            rioter.TryTakeDamage(10);
         }
     }
 }
