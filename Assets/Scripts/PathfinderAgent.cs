@@ -6,7 +6,7 @@ using Assets.Scripts.Model;
 using UnityEngine;
 using Zenject;
 
-public class PathfinderAgent : MonoBehaviour, IInitializable
+public class PathfinderAgent : MonoBehaviour
 {
     [SerializeField]
     private Vector3 _targetPosition;
@@ -21,8 +21,8 @@ public class PathfinderAgent : MonoBehaviour, IInitializable
 
     private Cell WorldToCell(Vector3 posWorld)
     {
-        var posX = Mathf.RoundToInt(posWorld.x);
-        var posY = Mathf.RoundToInt(posWorld.z);
+        var posX = Mathf.RoundToInt(posWorld.z);
+        var posY = Mathf.RoundToInt(posWorld.x);
 
         return _gridController.Grid[posX, posY];
     }
@@ -79,6 +79,9 @@ public class PathfinderAgent : MonoBehaviour, IInitializable
 
                 var candidate = _gridController.Grid[absX, absY];
 
+                if (candidate == null)
+                    continue;
+
                 if (!marked.Contains(candidate) 
                         &&  candidate.Type != CellType.Wall)
                 {
@@ -101,16 +104,13 @@ public class PathfinderAgent : MonoBehaviour, IInitializable
     // Use this for initialization
     void Start()
     {
+        CalculatePath();
+
     }
 
     // Update is called once per frame
     void Update()
     {
         FollowPath();
-    }
-
-    public void Initialize()
-    {
-        CalculatePath();
     }
 }

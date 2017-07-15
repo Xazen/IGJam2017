@@ -21,6 +21,7 @@ public class GridController: IInitializable
 
     public void Initialize()
     {
+        Debug.Log("intialized GridController");
         Grid = ParseMap(_pathToMapFile);
     }
 
