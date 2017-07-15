@@ -19,7 +19,7 @@ public abstract class Building : MonoBehaviour
     public void GetDamage(int damage)
     {
         if (_slider == null) {
-            _slider = Instantiate(HealthSlider, gameObject.transform).GetComponent<Slider>();
+            _slider = Instantiate(HealthSlider,transform.position,Quaternion.identity,transform).GetComponentInChildren<Slider>();
             _slider.maxValue = MaxHealth;
         }
         _health -= damage;
