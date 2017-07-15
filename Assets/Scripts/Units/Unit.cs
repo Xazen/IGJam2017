@@ -2,6 +2,7 @@
 
 public abstract class Unit : MonoBehaviour
 {
+	public UnitType UnitType;
 	public GameObject Prefab;
 	public Color OriginalColor;
 	public Color OriginalEmissionColor;

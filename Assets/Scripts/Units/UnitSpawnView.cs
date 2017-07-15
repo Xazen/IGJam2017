@@ -19,11 +19,13 @@ public class UnitSpawnView : MonoBehaviour
 	
 	private UnitSpawnController _unitSpawnController;
 	private Unit _unitSpawnPreview;
+	private GameController _gameController;
 
 	[Inject]
-	public void Inject(UnitSpawnController unitSpawnController)
+	public void Inject(UnitSpawnController unitSpawnController, GameController gameController)
 	{
 		_unitSpawnController = unitSpawnController;
+		_gameController = gameController;
 	}
 
 	public void Update()
@@ -45,6 +47,7 @@ public class UnitSpawnView : MonoBehaviour
 		if (Input.GetKeyDown(KeyCode.Mouse0) && IsSpawnPossible())
 		{
 			_unitSpawnPreviewGo.GetComponent<Unit>().ResetMaterial();
+			_gameController.UpdateBudget(-_gameController.GetCost(_unitSpawnPreviewGo.GetComponent<Unit>().UnitType));
 			ResetSpawnPending();
 			_unitSpawnController.ResetSelectedUnit();
 		}
