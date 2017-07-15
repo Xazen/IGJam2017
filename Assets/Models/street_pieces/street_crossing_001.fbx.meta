@@ -33,6 +33,7 @@ ModelImporter:
     2300010: pPlane22
     2300012: pPlane26
     2300014: pPlane27
+    2300016: street_crossing_001
     3300000: pCube21
     3300002: pCube22
     3300004: pCube23
@@ -41,6 +42,7 @@ ModelImporter:
     3300010: pPlane22
     3300012: pPlane26
     3300014: pPlane27
+    3300016: street_crossing_001
     4300000: pPlane27
     4300002: pPlane26
     4300004: pPlane22
@@ -49,6 +51,7 @@ ModelImporter:
     4300010: pCube23
     4300012: pCube22
     4300014: pCube21
+    4300016: street_crossing_001
     9500000: //RootNode
   materials:
     importMaterials: 1

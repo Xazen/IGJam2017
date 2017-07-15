@@ -54,6 +54,7 @@ ModelImporter:
     2300024: pCube5
     2300026: pCube6
     2300028: pPlane20
+    2300030: street_city_fill_001
     3300000: pCube33
     3300002: pCube34
     3300004: pCube35
@@ -69,6 +70,7 @@ ModelImporter:
     3300024: pCube5
     3300026: pCube6
     3300028: pPlane20
+    3300030: street_city_fill_001
     4300000: pPlane20
     4300002: pCube6
     4300004: pCube5
@@ -84,6 +86,7 @@ ModelImporter:
     4300024: pCube35
     4300026: pCube34
     4300028: pCube33
+    4300030: street_city_fill_001
     9500000: //RootNode
   materials:
     importMaterials: 1

@@ -30,6 +30,7 @@ ModelImporter:
     2300008: pPlane34
     2300010: pPlane35
     2300012: pPlane36
+    2300014: street_corner_004
     3300000: pCube17
     3300002: pCube18
     3300004: pCube19
@@ -37,6 +38,7 @@ ModelImporter:
     3300008: pPlane34
     3300010: pPlane35
     3300012: pPlane36
+    3300014: street_corner_004
     4300000: pCube20
     4300002: pPlane34
     4300004: pPlane36
@@ -44,6 +46,7 @@ ModelImporter:
     4300008: pCube18
     4300010: pCube17
     4300012: pPlane35
+    4300014: street_corner_004
     9500000: //RootNode
   materials:
     importMaterials: 1

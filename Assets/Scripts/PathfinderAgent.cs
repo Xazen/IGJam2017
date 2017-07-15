@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using Assets.Scripts.Model;
+using Assets.Scripts.Util;
 using UnityEngine;
 using Zenject;
 
@@ -68,6 +69,7 @@ public class PathfinderAgent : MonoBehaviour
         var adj = GetAdjacentCells(pos, marked);
         if (adj.Count == 0)
             return null;
+        adj.Shuffle();
         foreach (var cell in adj)
         {
             var potPath = CalculatePath(cell, marked);

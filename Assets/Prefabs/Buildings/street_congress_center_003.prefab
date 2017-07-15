@@ -307,6 +307,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4442382554909236}
   - component: {fileID: 95233565433990298}
+  - component: {fileID: 114860977535322930}
   m_Layer: 0
   m_Name: street_congress_center_003
   m_TagString: Untagged
@@ -1766,3 +1767,17 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
+--- !u!114 &114860977535322930
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1733641316163504}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 75f65508ecbf4a342bc94b9b0fbec542, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  MaxHealth: 500
+  BuildingModels: []
+  HealthSlider: {fileID: 0}
