@@ -18,12 +18,12 @@ public abstract class Building : MonoBehaviour
 
     public void GetDamage(int damage)
     {
-        if (_slider == null) {
-            _slider = Instantiate(HealthSlider,transform.position,Quaternion.identity,transform).GetComponentInChildren<Slider>();
-            _slider.maxValue = MaxHealth;
-        }
+        //if (_slider == null) {
+        //    _slider = Instantiate(HealthSlider,transform.position,Quaternion.identity,transform).GetComponentInChildren<Slider>();
+        //    _slider.maxValue = MaxHealth;
+        //}
         _health -= damage;
-        _slider.value = _health;
+        //_slider.value = _health;
         if (_health <= 0)
         {
             DestroyBuilding();
@@ -32,7 +32,7 @@ public abstract class Building : MonoBehaviour
 
     public virtual void DestroyBuilding()
     {
-        //Destroy(gameObject);
+        Destroy(gameObject);
     }
 
    
