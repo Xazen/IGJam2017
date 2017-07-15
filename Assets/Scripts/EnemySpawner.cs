@@ -18,6 +18,9 @@ public class EnemySpawner : MonoBehaviour
     {
         GameObject enemy = Instantiate(Enemy, gameObject.transform.position, Quaternion.identity);
         _diContainer.InjectGameObject(enemy);
-        enemy.GetComponent<PathfinderAgent>().CalculatePath(new Vector3(_gameController.TargetPoint.x, 0, _gameController.TargetPoint.y));
+
+        var enemyBhv = enemy.GetComponent<Rioter>();
+
+        enemyBhv.MoveTo(new Vector3(_gameController.TargetPoint.x, 0, _gameController.TargetPoint.y));
     }
 }

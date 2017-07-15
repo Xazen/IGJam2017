@@ -147,7 +147,6 @@ public class PathfinderAgent : MonoBehaviour
 
         if (_currentPath.Count == 0)
         {
-            Debug.Log("stopping");
             Stop();
             return;
         }
