@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.37311947, g: 0.38074002, b: 0.35872707, a: 1}
+  m_IndirectSpecularColor: {r: 0.37311992, g: 0.38074034, b: 0.35872716, a: 1}
 --- !u!157 &3
 LightmapSettings:
   m_ObjectHideFlags: 0
@@ -707,10 +707,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   MainCamera: {fileID: 161569804}
-  SpawnPossibleMaterial: {fileID: 2100000, guid: 10787919f576e4dafb16ab6f3e4b8140,
-    type: 2}
-  SpawnImpossibleMaterial: {fileID: 2100000, guid: 55cbc34f73b74446c965796bf2a7d355,
-    type: 2}
+  SpawnPossibleMaterialColor: {r: 0.6397059, g: 1, b: 0.6720081, a: 0.497}
+  SpawnImpossibleMaterialColor: {r: 0.9705882, g: 0.4067906, b: 0.4067906, a: 0.484}
 --- !u!4 &492941480
 Transform:
   m_ObjectHideFlags: 0
