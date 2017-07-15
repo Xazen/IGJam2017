@@ -56,12 +56,15 @@ public class MapGenerator : EditorWindow {
                             if (int.TryParse(line[j], out a)) {
                                 grid[i, j] = a;
                                 if (grid[i, j] != -1) {
-                                    Instantiate(tiles[grid[i, j]],new Vector3(i,0,j),Quaternion.identity,parent.transform);
-                            }
+                                    GameObject mapPart = Instantiate(tiles[grid[i, j]],new Vector3(i,0,j),Quaternion.identity,parent.transform);
+                                    mapPart.tag = TagConstants.Map;
+                                }
                         }
                     }
                 }
             }
+
+            parent.tag = TagConstants.Map;
             PrefabUtility.CreatePrefab("Assets/Prefabs/"+fileName+".prefab", parent);
             DestroyImmediate(parent);
         }

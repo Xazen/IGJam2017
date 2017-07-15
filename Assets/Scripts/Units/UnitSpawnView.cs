@@ -5,8 +5,8 @@ public class UnitSpawnView : MonoBehaviour
 {
 	public Camera MainCamera;
 
-	private Vector3 _mouseOverMapPosition;
-	private GameObject _selectedUnit;
+	private Vector3 _targetUnitSpawnPreviewPosition;
+	private GameObject _unitSpawnPreview;
 	
 	private UnitSpawnController _unitSpawnController;
 
@@ -24,12 +24,13 @@ public class UnitSpawnView : MonoBehaviour
 			return;
 		}
 
-		if (IsMouseOverMap(out _mouseOverMapPosition))
+		if (IsMouseOverMap(out _targetUnitSpawnPreviewPosition))
 		{
-			if (_selectedUnit == null)
-			{
-				_selectedUnit = _unitSpawnController.GetSelectedUnitPrefab();	
-			}
+			_targetUnitSpawnPreviewPosition = new Vector3(
+				Mathf.RoundToInt(_targetUnitSpawnPreviewPosition.x),
+				0,
+				Mathf.RoundToInt(_targetUnitSpawnPreviewPosition.z));
+			UpdateSpawnPreview();
 		}
 	}
 
@@ -39,10 +40,26 @@ public class UnitSpawnView : MonoBehaviour
 		RaycastHit hit;
 		if(Physics.Raycast(ray, out hit))
 		{
-			bool isMouseOverMap = hit.collider.gameObject.CompareTag(TagConstants.Map);
 			mousePosition = hit.point;
-			return isMouseOverMap;
+			return true;
 		}
+		
+		// Just move the preview somewhere outside the visible area
+		mousePosition = new Vector3(-1000, -1000, -1000);
 		return false;
+	}
+
+	private void UpdateSpawnPreview()
+	{
+		// 
+		if (!_unitSpawnPreview)
+		{
+			_unitSpawnPreview = Instantiate(_unitSpawnController.GetSelectedUnitPrefab(), _targetUnitSpawnPreviewPosition,
+				Quaternion.identity);
+		}
+		else if (_unitSpawnPreview.transform.position != _targetUnitSpawnPreviewPosition)
+		{
+			_unitSpawnPreview.transform.position = _targetUnitSpawnPreviewPosition;
+		}
 	}
 }
