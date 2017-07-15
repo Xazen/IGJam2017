@@ -1,4 +1,5 @@
 ﻿using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
 using Zenject;
 
@@ -6,7 +7,14 @@ public class GameView : MonoBehaviour
 {
     private const float SpawnFrequency = 0.1f;
     
+    [Header("Buildings")] 
+    public Transform StartingPosition;
+    public List<GameObject> ShopList;
+    public GameObject CongressCenter;
+    
+    [Header("Prefabs")]
     public GameObject EnemySpawnerPrefab;
+    
     private GameController _gameController;
     private EnemySpawner _enemySpawner;
     private DiContainer _diContainer;
@@ -21,6 +29,7 @@ public class GameView : MonoBehaviour
 
     public void Start()
     {
+        _gameController.Setup(StartingPosition.position, CongressCenter.transform.position);
         GameObject enemySpawner = Instantiate(EnemySpawnerPrefab, new Vector3(_gameController.StartingPoint.x, 0, _gameController.StartingPoint.y), Quaternion.identity);
         _enemySpawner = enemySpawner.GetComponent<EnemySpawner>();
         _diContainer.InjectGameObject(enemySpawner);

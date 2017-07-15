@@ -21,10 +21,23 @@ public class PathfinderAgent : MonoBehaviour
 
     private List<Cell> _currentPath;
 
+    private bool _stopMovement;
 
-    private Cell _currentCell;
     private Cell _nextCell;
 
+    private bool IsOnStreet(Vector3 world)
+    {
+        try
+        {
+            var posX = Mathf.RoundToInt(world.z);
+            var posY = Mathf.RoundToInt(world.x);
+            return _gridController.Grid[posX, posY].Type == CellType.Street;
+        }
+        catch
+        {
+            return false;
+        }
+    }
 
     private Cell WorldToCell(Vector3 posWorld)
     {
@@ -52,12 +65,18 @@ public class PathfinderAgent : MonoBehaviour
 
     public void CalculatePath(Vector3 targetPosition)
     {
+        Debug.Assert(IsOnStreet(targetPosition), "target must be on street");
+        Debug.Assert(IsOnStreet(transform.position), "agent must be on street");
+
+        _stopMovement = false;
         _targetPosition = targetPosition;
+
         var startCell = WorldToCell(transform.position);
         _targetCell = WorldToCell(_targetPosition);
 
         _currentPath = CalculatePath(startCell, new List<Cell>());
     }
+
 
     public List<Cell> CalculatePath(Cell pos, List<Cell> marked)
     {
@@ -116,19 +135,27 @@ public class PathfinderAgent : MonoBehaviour
         return result;
     }
 
+    public void Stop()
+    {
+        _stopMovement = true;
+    }
+
     private void FollowPath()
     {
         if (_currentPath == null)
             return;
-        _nextCell = _currentPath[_currentPath.Count - 2];
+
+        if (_currentPath.Count == 0)
+        {
+            Debug.Log("stopping");
+            Stop();
+            return;
+        }
+        _nextCell = _currentPath[_currentPath.Count - 1];
         if (Vector2.Distance(WorldToGridPos(transform.position), _nextCell.Position) < 0.4)
         {
             _currentPath.Remove(_currentPath.Last());
         }
-        _currentCell = _currentPath.Last();
-        if (_currentPath.Last() != _currentCell)
-            _currentPath.Remove(_currentPath.Last());
-        
 
         var direction = _nextCell.Position - WorldToGridPos(transform.position);
         
@@ -138,6 +165,7 @@ public class PathfinderAgent : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        FollowPath();
+        if(!_stopMovement)
+            FollowPath();
     }
 }

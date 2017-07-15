@@ -68,12 +68,15 @@ public class MapGenerator : EditorWindow {
                             if (_grid[i, j] != -1)
                             {
                                 GameObject g = _tiles[_grid[i, j]];
-                                Instantiate(g, new Vector3(i, 0, j), Quaternion.Euler(0, parsedRotationCell, 0), parent.transform);
+                                GameObject mapPart = Instantiate(g, new Vector3(i, 0, j), Quaternion.Euler(0, parsedRotationCell, 0), parent.transform);
+                                mapPart.tag = TagConstants.Map;
                             }
                         }
                     }
                 }
             }
+
+            parent.tag = TagConstants.Map;
             PrefabUtility.CreatePrefab("Assets/Prefabs/"+_fileName+".prefab", parent);
             DestroyImmediate(parent,true);
         }

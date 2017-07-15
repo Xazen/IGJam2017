@@ -1,4 +1,5 @@
 ﻿using Assets.Scripts.Model;
+using UnityEngine;
 using Zenject;
 
 public class UnitSpawnController
@@ -24,6 +25,7 @@ public class UnitSpawnController
 
 	public void SetSelectedUnit(Unit selectedUnit)
 	{
+		Debug.Log("unit to spawn selected");
 		_unitSpawnModel.SetSelectedUnit(selectedUnit);
 	}
 
