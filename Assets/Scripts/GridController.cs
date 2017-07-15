@@ -29,6 +29,14 @@ public class GridController: IInitializable
         Grid = ParseMap(_pathToMapFile);
     }
 
+    public Cell WorldToCell(Vector3 posWorld)
+    {
+        var posX = Mathf.RoundToInt(posWorld.z);
+        var posY = Mathf.RoundToInt(posWorld.x);
+
+        return Grid[posX, posY];
+    }
+    
     private Cell[,] ParseMap(string mapFilePath)
     {
         var mapRows = File.ReadAllLines(mapFilePath);
