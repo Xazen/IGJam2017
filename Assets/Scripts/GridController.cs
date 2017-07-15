@@ -11,7 +11,7 @@ public class GridController: IInitializable
     public Cell[,] Grid { get; set; }
 
 
-    [SerializeField] private string _pathToMapFile;
+    private const string _pathToMapFile = "Assets/Resources/test.csv";
 
     private readonly Dictionary<string, CellType> _symbolToCellMapping = new Dictionary<string, CellType>
     {
@@ -29,24 +29,24 @@ public class GridController: IInitializable
     private Cell[,] ParseMap(string mapFilePath)
     {
         var mapRows = File.ReadAllLines(mapFilePath);
-        var mapHeight = mapRows.Length + 1;
-        var mapWidth = mapRows[0].Split(';').Length + 1;
+        var mapHeight = mapRows.Length;
+        var mapWidth = mapRows[0].Split(';').Length;
         var result = new Cell[mapWidth, mapHeight];
 
         int x;
         int y = 0;
         foreach (var row in mapRows)
         {
-            y++;
             var cellSymbols = row.Split(';');
             x = 0;
             foreach (var cellSymbol in cellSymbols)
             {
-                x++;
                 CellType celltype;
                 if (_symbolToCellMapping.TryGetValue(cellSymbol, out celltype))
                     result[x, y] = new Cell { Position = new Vector2(x, y), Type = celltype };
+                x++;
             }
+            y++;
         }
         return result;
     }
