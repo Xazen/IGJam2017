@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using System.Net;
 using Assets.Scripts.Model;
 using UnityEngine;
@@ -11,6 +12,9 @@ public class PathfinderAgent : MonoBehaviour
     [SerializeField]
     private Vector3 _targetPosition;
 
+    [SerializeField, Range(0,5)]
+    private float _movementSpeed; 
+
     private Cell _targetCell;
 
     
@@ -19,12 +23,26 @@ public class PathfinderAgent : MonoBehaviour
     private List<Cell> _currentPath;
 
 
+    private Cell _currentCell;
+    private Cell _nextCell;
+
+
     private Cell WorldToCell(Vector3 posWorld)
     {
         var posX = Mathf.RoundToInt(posWorld.z);
         var posY = Mathf.RoundToInt(posWorld.x);
 
         return _gridController.Grid[posX, posY];
+    }
+
+    private Vector3 GridToWorldPos(Vector2 grid)
+    {
+        return new Vector3(grid.y, 0, grid.x);
+    }
+
+    private Vector2 WorldToGridPos(Vector3 world)
+    {
+        return new Vector2(world.z, world.x);
     }
 
     [Inject]
@@ -38,7 +56,7 @@ public class PathfinderAgent : MonoBehaviour
         var startCell = WorldToCell(transform.position);
         _targetCell = WorldToCell(_targetPosition);
 
-        var result = CalculatePath(startCell, new List<Cell>());
+        _currentPath = CalculatePath(startCell, new List<Cell>());
 
     }
 
@@ -48,23 +66,23 @@ public class PathfinderAgent : MonoBehaviour
 
         if (pos == _targetCell)
             return new List<Cell> {pos};
-        else
+
+        var adj = GetAdjacentCells(pos, marked);
+        if (adj.Count == 0)
+            return null;
+        foreach (var cell in adj)
         {
-            var adj = GetAdjacentCells(pos, marked);
-            if (adj.Count == 0)
-                return null;
-            foreach (var cell in adj)
+            var potPath = CalculatePath(cell, marked);
+            if (potPath != null)
             {
-                var potPath = CalculatePath(cell, marked);
-                if (potPath != null)
-                {
-                    potPath.Add(pos);
-                    return potPath;
-                }
+                potPath.Add(pos);
+                return potPath;
             }
         }
         return null;
     }
+
+    
 
     private List<Cell> GetAdjacentCells(Cell pos, List<Cell> marked)
     {
@@ -72,6 +90,10 @@ public class PathfinderAgent : MonoBehaviour
         for(var x = -1; x <= 1; x++)
         for (var y = -1; y <= 1; y++)
         {
+                //skip the corners
+            if (Math.Abs(x) == Math.Abs(y))
+                continue;
+                
             try
             {
                 var absX = Mathf.RoundToInt(x + pos.Position.x);
@@ -98,7 +120,21 @@ public class PathfinderAgent : MonoBehaviour
 
     private void FollowPath()
     {
+        if (_currentPath == null)
+            return;
+        _nextCell = _currentPath[_currentPath.Count - 2];
+        if (Vector2.Distance(WorldToGridPos(transform.position), _nextCell.Position) < 0.4)
+        {
+            _currentPath.Remove(_currentPath.Last());
+        }
+        _currentCell = _currentPath.Last();
+        if (_currentPath.Last() != _currentCell)
+            _currentPath.Remove(_currentPath.Last());
         
+
+        var direction = _nextCell.Position - WorldToGridPos(transform.position);
+        
+        transform.position += GridToWorldPos(direction.normalized * _movementSpeed * Time.deltaTime);
     }
 
     // Use this for initialization
