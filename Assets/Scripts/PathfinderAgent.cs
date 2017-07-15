@@ -23,7 +23,6 @@ public class PathfinderAgent : MonoBehaviour
 
     private bool _stopMovement;
 
-    private Cell _currentCell;
     private Cell _nextCell;
 
     private bool IsOnStreet(Vector3 world)
@@ -143,23 +142,20 @@ public class PathfinderAgent : MonoBehaviour
 
     private void FollowPath()
     {
-        if (_currentPath == null || _stopMovement)
+        if (_currentPath == null)
             return;
-        _nextCell = _currentPath[_currentPath.Count - 2];
+
+        if (_currentPath.Count == 0)
+        {
+            Debug.Log("stopping");
+            Stop();
+            return;
+        }
+        _nextCell = _currentPath[_currentPath.Count - 1];
         if (Vector2.Distance(WorldToGridPos(transform.position), _nextCell.Position) < 0.4)
         {
             _currentPath.Remove(_currentPath.Last());
-
-            if (_currentPath.Count == 0)
-            {
-                Stop();
-                return;
-            }
         }
-        _currentCell = _currentPath.Last();
-        if (_currentPath.Last() != _currentCell)
-            _currentPath.Remove(_currentPath.Last());
-        
 
         var direction = _nextCell.Position - WorldToGridPos(transform.position);
         
@@ -169,6 +165,7 @@ public class PathfinderAgent : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        FollowPath();
+        if(!_stopMovement)
+            FollowPath();
     }
 }
