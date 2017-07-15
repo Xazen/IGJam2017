@@ -9,6 +9,8 @@ public class BasicInstaller : MonoInstaller
           Container.Bind<UnitSpawnController>().AsSingle();
           Container.Bind<GridController>().AsSingle().NonLazy();
           Container.Bind<IInitializable>().To<GridController>().AsSingle().NonLazy();
+          Container.Bind<GameController>().AsSingle().NonLazy();
+          Container.Bind<ITickable>().To<GameController>().AsSingle().NonLazy();
     }
 }
 

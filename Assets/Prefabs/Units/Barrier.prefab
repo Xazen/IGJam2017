@@ -135,5 +135,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Prefab: {fileID: 1424410912306010}
-  Renderer: {fileID: 23176800668524000}
   OriginalMaterial: {fileID: 2100000, guid: 469cf02fee81940e8ac9fe9b4964d9a4, type: 2}

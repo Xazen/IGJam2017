@@ -85,7 +85,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_Materials:
-  - {fileID: 2100000, guid: 55cbc34f73b74446c965796bf2a7d355, type: 2}
+  - {fileID: 2100000, guid: 10787919f576e4dafb16ab6f3e4b8140, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -123,7 +123,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Prefab: {fileID: 1970166295554880}
-  Renderer: {fileID: 23633356198666364}
   OriginalMaterial: {fileID: 2100000, guid: 9388a8e2b2df743dbb33b498e10ae42f, type: 2}
 --- !u!136 &136402274766315694
 CapsuleCollider:
