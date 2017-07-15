@@ -1780,4 +1780,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   MaxHealth: 500
   BuildingModels: []
-  HealthSlider: {fileID: 0}
+  HealthSlider: {fileID: 1318984591750388, guid: 920338eae56f692479e32625da3f2e55,
+    type: 2}
