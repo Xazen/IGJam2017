@@ -1,5 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.IO;
 using Assets.Scripts.Model;
 using UnityEngine;
@@ -24,8 +23,6 @@ public class GridController: IInitializable
         Grid = ParseMap(_pathToMapFile);
     }
 
-
-
     private Cell[,] ParseMap(string mapFilePath)
     {
         var mapRows = File.ReadAllLines(mapFilePath);
@@ -49,6 +46,11 @@ public class GridController: IInitializable
             y++;
         }
         return result;
+    }
+
+    public CellType GetCellType(int x, int y)
+    {
+        return Grid[y, x].Type;
     }
 }
 
