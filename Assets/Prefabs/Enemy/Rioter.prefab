@@ -69,8 +69,8 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1901787889445098}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 1.5, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 0, y: 0.15, z: 0}
+  m_LocalScale: {x: 0.3, y: 0.3, z: 0.3}
   m_Children: []
   m_Father: {fileID: 4331853099096542}
   m_RootOrder: 0
@@ -139,8 +139,8 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1, y: 2, z: 1}
-  m_Center: {x: 0, y: 1.5, z: 0}
+  m_Size: {x: 0.4, y: 0.82, z: 0.4}
+  m_Center: {x: 0, y: 0.15, z: 0}
 --- !u!114 &114564525284648238
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -153,7 +153,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _targetPosition: {x: 0, y: 0, z: 0}
-  _movementSpeed: 1.45
+  _movementSpeed: 0.73
 --- !u!114 &114861291967369768
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -166,6 +166,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _damagePoints: 10
+  _attackRate: 1
   _pathfinder: {fileID: 114564525284648238}
 --- !u!136 &136574969841456694
 CapsuleCollider:

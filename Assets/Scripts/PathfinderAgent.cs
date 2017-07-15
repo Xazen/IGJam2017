@@ -75,6 +75,8 @@ public class PathfinderAgent : MonoBehaviour
         _targetCell = WorldToCell(_targetPosition);
 
         _currentPath = CalculatePath(startCell, new List<Cell>());
+        if(_currentPath == null)
+            Debug.Log("No path found");
     }
 
 
