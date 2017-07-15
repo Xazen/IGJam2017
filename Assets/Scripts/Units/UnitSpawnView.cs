@@ -44,8 +44,10 @@ public class UnitSpawnView : MonoBehaviour
 
 		if (Input.GetKeyDown(KeyCode.Mouse0) && IsSpawnPossible())
 		{
+			Debug.Log("spawn!");
 			_unitSpawnPreview.ResetMaterial();
 			ResetSpawnPending();
+			_unitSpawnController.ResetSelectedUnit();
 		}
 	}
 
@@ -66,22 +68,25 @@ public class UnitSpawnView : MonoBehaviour
 
 	private void UpdateSpawnPreview()
 	{
-		if (!IsSpawnPending())
+		if (!IsSpawnPending() && _unitSpawnController.IsUnitSelected())
 		{
 			_unitSpawnPreview = _unitSpawnController.GetSelectedUnitPrefab();
 			_unitSpawnPreviewGo = Instantiate(_unitSpawnPreview.GetModel(), _targetUnitSpawnPreviewPosition,
 				Quaternion.identity);
+			_unitSpawnPreviewGo.transform.position = new Vector3(_targetUnitSpawnPreviewPosition.x, 0, _targetUnitSpawnPreviewPosition.y);
 		}
 		else if (IsSpawnPreviewPositionOutdated())
 		{
-			_unitSpawnPreviewGo.transform.position = _targetUnitSpawnPreviewPosition;
+			_unitSpawnPreviewGo.transform.position = new Vector3(_targetUnitSpawnPreviewPosition.x, 0, _targetUnitSpawnPreviewPosition.y);
 
 			if (IsSpawnPossible())
 			{
+				Debug.Log("possible");
 				_unitSpawnPreview.SetMaterial(SpawnPossibleMaterial);
 			}
 			else
 			{
+				Debug.Log("impossible");
 				_unitSpawnPreview.SetMaterial(SpawnImpossibleMaterial);
 			}
 		}

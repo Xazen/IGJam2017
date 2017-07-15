@@ -7,7 +7,8 @@ public class BasicInstaller : MonoInstaller
 //        Container.Bind<string>().FromInstance("Hello World!");
 //        Container.Bind<Greeter>().AsSingle().NonLazy();
           Container.Bind<UnitSpawnController>().AsSingle();
-          Container.Bind<GridController>().AsSingle();
+          Container.Bind<GridController>().AsSingle().NonLazy();
+          Container.Bind<IInitializable>().To<GridController>().AsSingle().NonLazy();
     }
 }
 

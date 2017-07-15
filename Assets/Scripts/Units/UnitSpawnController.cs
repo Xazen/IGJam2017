@@ -36,4 +36,9 @@ public class UnitSpawnController
 	{
 		return _gridController.GetCellType(x, y) == CellType.Street;
 	}
+
+	public void ResetSelectedUnit()
+	{
+		_unitSpawnModel.SetSelectedUnit(null);
+	}
 }

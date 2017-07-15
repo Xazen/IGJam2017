@@ -25,7 +25,8 @@ public class GridController: IInitializable
 
     public CellType GetCellType(int x, int y)
     {
-        return Grid[x, y].Type;
+        CellType cellType = Grid[x, y].Type;
+        return cellType;
     }
 
     private Cell[,] ParseMap(string mapFilePath)

@@ -16,10 +16,13 @@ public abstract class Unit : MonoBehaviour
 	public void SetMaterial(Material material)
 	{
 		Renderer.material = material;
+		Renderer.materials = new []{material};
+		Renderer.sharedMaterial = material;
+		Renderer.sharedMaterials = new []{material};
 	}
 
 	public void ResetMaterial()
 	{
-		Renderer.material = OriginalMaterial;
+		Renderer.sharedMaterials[0] = OriginalMaterial;
 	}
 }
