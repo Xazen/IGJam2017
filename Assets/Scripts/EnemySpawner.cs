@@ -16,6 +16,6 @@ public class EnemySpawner : MonoBehaviour
     {
         GameObject enemy = Instantiate(Enemy, gameObject.transform.position, Quaternion.identity);
         _diContainer.InjectGameObject(enemy);
-        enemy.GetComponent<PathfinderAgent>().CalculatePath(new Vector3(19, 0, 15));
+        enemy.GetComponent<PathfinderAgent>().CalculatePath(new Vector3(23, 0, 20));
     }
 }

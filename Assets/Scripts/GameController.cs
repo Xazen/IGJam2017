@@ -6,7 +6,7 @@ public class GameController : ITickable
 	public const float RoundDuration = 20f;
 	public const int SpawnAmount = 10;
 	public const int SpawnAmountRoundMultiplier = 2;
-	public readonly Vector2 StartingPoint = new Vector2(1, 2);
+	public readonly Vector2 StartingPoint = new Vector2(0, 2);
 	
 	public delegate void RoundDelegate(int round);
 	public event RoundDelegate OnRoundStarted;
