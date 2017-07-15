@@ -8,7 +8,7 @@ public class GameView : MonoBehaviour
     private const float SpawnFrequency = 0.1f;
     
     [Header("Buildings")] 
-    public Transform StartingPosition;
+    public Transform[] StartingPositions;
     public List<GameObject> ShopList;
     public GameObject CongressCenter;
     
@@ -16,7 +16,7 @@ public class GameView : MonoBehaviour
     public GameObject EnemySpawnerPrefab;
     
     private GameController _gameController;
-    private EnemySpawner _enemySpawner;
+    private List<EnemySpawner> _enemySpawners;
     private DiContainer _diContainer;
 
     [Inject]
@@ -29,10 +29,24 @@ public class GameView : MonoBehaviour
 
     public void Start()
     {
-        _gameController.Setup(StartingPosition.position, CongressCenter.transform.position);
-        GameObject enemySpawner = Instantiate(EnemySpawnerPrefab, new Vector3(_gameController.StartingPoint.x, 0, _gameController.StartingPoint.y), Quaternion.identity);
-        _enemySpawner = enemySpawner.GetComponent<EnemySpawner>();
-        _diContainer.InjectGameObject(enemySpawner);
+        List<Vector3> startingPointPositions = new List<Vector3>();
+        for (int i = 0; i < StartingPositions.Length; i++)
+        {
+            startingPointPositions.Add(StartingPositions[i].transform.position);
+        }
+        _gameController.Setup(
+             startingPointPositions.ToArray(),
+             CongressCenter.transform.position);
+        
+        _enemySpawners = new List<EnemySpawner>();
+
+        for (int i = 0; i < startingPointPositions.Count; i++)
+        {
+            Vector2 startingPos = _gameController.StartingPoint[i];
+            GameObject enemySpawner = Instantiate(EnemySpawnerPrefab, new Vector3(startingPos.x, 0, startingPos.y), Quaternion.identity);
+            _enemySpawners.Add(enemySpawner.GetComponent<EnemySpawner>());
+            _diContainer.InjectGameObject(enemySpawner);
+        }
         _gameController.StartGame();
     }
 
@@ -45,7 +59,8 @@ public class GameView : MonoBehaviour
     {
         for (int i = 0; i < enemyCount; i++)
         {
-            _enemySpawner.SpawnEnemy();
+            int index = Random.Range(0, Mathf.Min(_enemySpawners.Count, _gameController.GetCurrentGameRound()));
+            _enemySpawners[index].SpawnEnemy();
             yield return new WaitForSeconds(spawnFrequency);
         }
     }

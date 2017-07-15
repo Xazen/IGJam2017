@@ -1,5 +1,4 @@
-﻿using System;
-using UnityEngine;
+﻿using UnityEngine;
 using Zenject;
 
 public class GameController : ITickable
@@ -7,10 +6,10 @@ public class GameController : ITickable
     public int Budget = 1000;
     public int[] WaveReward;
 	public const float RoundDuration = 20f;
-	public const float MercyDuration = 15f;
+	public const float MercyDuration = 5f;
 	public const int SpawnAmount = 10;
 	public const int SpawnAmountRoundMultiplier = 2;
-	public Vector2 StartingPoint;
+	public Vector2[] StartingPoint;
 	public Vector2 TargetPoint;
 
 	public delegate void RoundDelegate(int round);
@@ -28,9 +27,13 @@ public class GameController : ITickable
 
 	private bool _gameStarted = false;
 
-	public void Setup(Vector3 startingPosition, Vector3 targetPosition)
+	public void Setup(Vector3[] startingPosition, Vector3 targetPosition)
 	{
-		StartingPoint = new Vector2(startingPosition.x, startingPosition.z);
+		StartingPoint = new Vector2[startingPosition.Length];
+		for (int i = 0; i < startingPosition.Length; i++)
+		{
+			StartingPoint[i] = new Vector2(startingPosition[i].x, startingPosition[i].z);
+		}
 		TargetPoint = new Vector2(targetPosition.x, targetPosition.z);
 	}
 	
@@ -41,9 +44,7 @@ public class GameController : ITickable
 		if (OnGameStarted != null)
 		{
 			OnGameStarted();
-		}
-		
-		StartNextRound();
+		}		
 	}
 
 	public void ResetGame()
@@ -69,9 +70,9 @@ public class GameController : ITickable
 				_currentRoundDuration += Time.deltaTime;
 				return;
 			}
-
 			_currentRoundDuration = 0;
 			_isMercyDurationOver = true;
+			StartNextRound();
 		} 
 		
 		// Check for next round
@@ -97,6 +98,11 @@ public class GameController : ITickable
 		}
 	
 		SpawnEnemies();
+	}
+	
+	public int GetCurrentGameRound()
+	{
+		return _round;
 	}
 
     private void RewardPlayer()
