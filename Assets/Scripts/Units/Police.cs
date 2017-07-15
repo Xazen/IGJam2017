@@ -1,11 +1,7 @@
-﻿using UnityEngine;
-
-public class Police : MonoBehaviour, IUnit
+﻿public class Police : Unit
 {
-	public GameObject PoliceModel;
-	
-	public GameObject GetModel()
+	public override void OnUnitSpawned()
 	{
-		return PoliceModel;
+		
 	}
 }
