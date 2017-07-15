@@ -6,10 +6,11 @@ using UnityEngine;
 
 public class MapGenerator : EditorWindow {
 
-    private List<GameObject> tiles = new List<GameObject>();
-    private int[,] grid;
-    private string fileName = "test";
-    private string path;
+    private List<GameObject> _tiles = new List<GameObject>();
+    private int[,] _grid;
+    private string _fileName = "test";
+    private string _path = "Assets/Resources/test.csv";
+    private string _rotationPath = "Assets/Resources/rotation.csv";
 
     [MenuItem("Window/MapGenerator")]
     static void Init()
@@ -19,54 +20,58 @@ public class MapGenerator : EditorWindow {
         window.Show();
     }
 
-    void Update() {
-
-    }
-
     // Update is called once per frame
     void OnGUI() {
-        for (int i = 0; i < tiles.Count; i++)
+        for (int i = 0; i < _tiles.Count; i++)
         {
-            tiles[i] = (GameObject)EditorGUILayout.ObjectField(i.ToString(),tiles[i],typeof(GameObject),true);
+            _tiles[i] = (GameObject)EditorGUILayout.ObjectField(i.ToString(),_tiles[i],typeof(GameObject),true);
         }
         if (GUILayout.Button("add prefab"))
         {
-            tiles.Add(null);
+            _tiles.Add(null);
         }
-        path = EditorGUILayout.TextField("CSV path", path);
-       
-        fileName = EditorGUILayout.TextField("Prefab Name", fileName);
+        _rotationPath = EditorGUILayout.TextField("Rotation path", _rotationPath);
+        _path = EditorGUILayout.TextField("CSV path", _path);
+        _fileName = EditorGUILayout.TextField("Prefab Name", _fileName);
         if (GUILayout.Button("Generate")) {
 
-            string csv = System.IO.File.ReadAllText(path);
+            string csv = System.IO.File.ReadAllText(_path);
             string[] lines = csv.Split("\n"[0]);
+            string csvRotation = System.IO.File.ReadAllText(_rotationPath);
+            string[] rotationlines = csvRotation.Split("\n"[0]);
             int x = lines.Length;
             int y = lines[0].Split(";"[0]).Length;
             Debug.Log(x);
             Debug.Log(y);
 
-            grid = new int[x, y];
+            _grid = new int[x, y];
 
-            GameObject parent = Instantiate(new GameObject("Map"));
+            GameObject parent = new GameObject("Map");
             for (int i = 0; i<x;i++) {
                 string[] line = lines[i].Split(";"[0]);
+                string[] rotationLine = rotationlines[i].Split(";"[0]);
+
                 if (line.Length == y) {
                     for (int j = 0; j<y;j++) {
-                            int a = 0;
-                            if (int.TryParse(line[j], out a)) {
-                                grid[i, j] = a;
-                                if (grid[i, j] != -1) {
-                                    GameObject mapPart = Instantiate(tiles[grid[i, j]],new Vector3(i,0,j),Quaternion.identity,parent.transform);
-                                    mapPart.tag = TagConstants.Map;
-                                }
+                        int parsedCell = 0;
+                        int parsedRotationCell = 0;
+                        int.TryParse(rotationLine[j], out parsedRotationCell);
+                        if (int.TryParse(line[j], out parsedCell)) {
+                            if (parsedRotationCell == -1) {
+                                parsedRotationCell = UnityEngine.Random.Range(0, 3) * 90;
+                            }
+                            
+                            _grid[i, j] = parsedCell;
+                            if (_grid[i, j] != -1) {
+                            GameObject g = _tiles[_grid[i, j]];
+                                Instantiate(g,new Vector3(j,0,i), Quaternion.Euler(0, parsedRotationCell, 0), parent.transform);
+                            }
                         }
                     }
                 }
             }
-
-            parent.tag = TagConstants.Map;
-            PrefabUtility.CreatePrefab("Assets/Prefabs/"+fileName+".prefab", parent);
-            DestroyImmediate(parent);
+            PrefabUtility.CreatePrefab("Assets/Prefabs/"+_fileName+".prefab", parent);
+            DestroyImmediate(parent,true);
         }
 		
 	}
