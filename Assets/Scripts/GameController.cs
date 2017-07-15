@@ -1,14 +1,17 @@
-﻿using UnityEngine;
+﻿using System;
+using UnityEngine;
 using Zenject;
 
 public class GameController : ITickable
 {
+    public int Budget = 1000;
+    public int[] WaveReward;
 	public const float RoundDuration = 20f;
 	public const int SpawnAmount = 10;
 	public const int SpawnAmountRoundMultiplier = 2;
 	public Vector2 StartingPoint;
 	public Vector2 TargetPoint;
-	
+
 	public delegate void RoundDelegate(int round);
 	public event RoundDelegate OnRoundStarted;
 	
@@ -68,6 +71,7 @@ public class GameController : ITickable
 
 	private void StartNextRound()
 	{
+        RewardPlayer();
 		_round++;
 		_currentRoundDuration = 0;
 		Debug.Log("Start round " + _round);
@@ -79,7 +83,12 @@ public class GameController : ITickable
 		SpawnEnemies();
 	}
 
-	private void SpawnEnemies()
+    private void RewardPlayer()
+    {
+        Budget += WaveReward[_round];
+    }
+
+    private void SpawnEnemies()
 	{
 		int spawnCount = SpawnAmount + (_round - 1) * SpawnAmountRoundMultiplier;
 		Debug.Log("Should spawn " + spawnCount + " enemies");
