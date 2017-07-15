@@ -7,22 +7,23 @@ using UnityEngine;
 public class Rioter : MonoBehaviour
 {
     [SerializeField] private int _damagePoints;
+    [SerializeField] private float _attackRate;
 
     [SerializeField] private PathfinderAgent _pathfinder;
 
     private Vector3 _target;
+    private float _lastAttackTimestamp;
 
-    public int DamagePoints
+
+    public int TryAttack()
     {
-        get
+        if (Time.time - _lastAttackTimestamp >= _attackRate)
         {
+            Debug.Log("attack");
+            _lastAttackTimestamp = Time.time;
             return _damagePoints;
         }
-
-        set
-        {
-            _damagePoints = value;
-        }
+        return 0;
     }
 
     public void MoveTo(Vector3 target)
@@ -31,6 +32,14 @@ public class Rioter : MonoBehaviour
         _target = target;
         _pathfinder.CalculatePath(target);
     }
+
+    private void Start()
+    {
+        _lastAttackTimestamp = Time.time;
+    }
+
+
+
 
     public void Stop()
     {

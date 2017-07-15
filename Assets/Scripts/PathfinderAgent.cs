@@ -140,6 +140,11 @@ public class PathfinderAgent : MonoBehaviour
         _stopMovement = true;
     }
 
+    public void Continue()
+    {
+        _stopMovement = false;
+    }
+
     private void FollowPath()
     {
         if (_currentPath == null)

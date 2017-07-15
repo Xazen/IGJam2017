@@ -9,7 +9,7 @@ public class Shop : Building
 
     private void OnTriggerEnter(Collider other)
     {
-        Debug.Log("enter");
+        
         var rioter = other.gameObject.GetComponent<Rioter>();
         if (rioter != null)
         {
@@ -23,7 +23,7 @@ public class Shop : Building
         var rioter = other.gameObject.GetComponent<Rioter>();
         if (rioter != null)
         {
-            GetDamage(rioter.DamagePoints);
+            GetDamage(rioter.TryAttack());
         }
     }
 
