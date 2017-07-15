@@ -7,7 +7,8 @@ public class GameController : ITickable
     public int Budget = 1000;
     public int[] WaveReward;
 	public const float RoundDuration = 20f;
-	public const int SpawnAmount = 1;
+	public const float MercyDuration = 15f;
+	public const int SpawnAmount = 10;
 	public const int SpawnAmountRoundMultiplier = 2;
 	public Vector2 StartingPoint;
 	public Vector2 TargetPoint;
@@ -23,6 +24,7 @@ public class GameController : ITickable
 	
 	private float _currentRoundDuration = 0f;
 	private int _round = 1;
+	private bool _isMercyDurationOver = false;
 
 	private bool _gameStarted = false;
 
@@ -48,6 +50,8 @@ public class GameController : ITickable
 	{
 		_gameStarted = false;
 		_round = 0;
+		_isMercyDurationOver = false;
+		_currentRoundDuration = 0;
 	}
 
 	public void Tick()
@@ -57,6 +61,18 @@ public class GameController : ITickable
 		{
 			return;
 		}
+
+		if (!_isMercyDurationOver)
+		{
+			if (_currentRoundDuration < MercyDuration)
+			{
+				_currentRoundDuration += Time.deltaTime;
+				return;
+			}
+
+			_currentRoundDuration = 0;
+			_isMercyDurationOver = true;
+		} 
 		
 		// Check for next round
 		if (_currentRoundDuration < RoundDuration)
