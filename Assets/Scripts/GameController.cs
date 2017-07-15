@@ -4,7 +4,7 @@ using Zenject;
 public class GameController : ITickable
 {
 	public const float RoundDuration = 20f;
-	public const int SpawnAmount = 10;
+	public const int SpawnAmount = 1;
 	public const int SpawnAmountRoundMultiplier = 2;
 	public Vector2 StartingPoint;
 	public Vector2 TargetPoint;
