@@ -78,6 +78,7 @@ ModelImporter:
     2300040: pPipe3
     2300042: pPlane19
     2300044: pPlane23
+    2300046: street_shop_001
     3300000: pCube51
     3300002: pCube52
     3300004: pCube53
@@ -101,6 +102,7 @@ ModelImporter:
     3300040: pPipe3
     3300042: pPlane19
     3300044: pPlane23
+    3300046: street_shop_001
     4300000: pCube60
     4300002: pPlane23
     4300004: pPlane19
@@ -124,6 +126,7 @@ ModelImporter:
     4300040: pCube66
     4300042: pCube67
     4300044: pCube99
+    4300046: street_shop_001
     9500000: //RootNode
   materials:
     importMaterials: 1
