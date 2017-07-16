@@ -14,8 +14,9 @@ public abstract class Unit : MonoBehaviour
     private List<Rioter> _attackers = new List<Rioter>();
     private int _health;
     private bool _destroyed;
+	private bool _isSpawned;
 
-    public abstract void OnUnitSpawned();
+	public abstract void OnUnitSpawned();
 
 	public void Start()
 	{
@@ -36,7 +37,13 @@ public abstract class Unit : MonoBehaviour
 		_renderer.material.SetColor("_EmissionColor", materialColor);
 	}
 
-	public void ResetMaterial()
+	public void SpawnUnit()
+	{
+		_isSpawned = true;
+		ResetMaterial();
+	}
+	
+	private void ResetMaterial()
 	{
 		_renderer.material.color = OriginalColor;
 		_renderer.material.SetColor("_EmissionColor", OriginalEmissionColor);
@@ -70,7 +77,7 @@ public abstract class Unit : MonoBehaviour
     {
 
         var rioter = other.gameObject.GetComponent<Rioter>();
-        if (rioter != null && !_attackers.Contains(rioter) && !_destroyed)
+        if (rioter != null && !_attackers.Contains(rioter) && !_destroyed && _isSpawned)
         {
             _attackers.Add(rioter);
             rioter.Stop();

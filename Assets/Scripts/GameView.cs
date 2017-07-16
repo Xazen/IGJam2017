@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using Zenject;
 
 public class GameView : MonoBehaviour
@@ -29,6 +30,7 @@ public class GameView : MonoBehaviour
 
     public void Start()
     {
+        SceneManager.LoadScene(2, LoadSceneMode.Additive);
         List<Vector3> startingPointPositions = new List<Vector3>();
         for (int i = 0; i < StartingPositions.Length; i++)
         {

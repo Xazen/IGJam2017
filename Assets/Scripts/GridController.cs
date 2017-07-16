@@ -6,11 +6,7 @@ using Zenject;
 
 public class GridController: IInitializable
 {
-
     public Cell[,] Grid { get; set; }
-
-
-    private const string _pathToMapFile = "Assets/Resources/test.csv";
 
     private readonly Dictionary<string, CellType> _symbolToCellMapping = new Dictionary<string, CellType>
     {
@@ -26,31 +22,32 @@ public class GridController: IInitializable
 
     public void Initialize()
     {
-        Grid = ParseMap(_pathToMapFile);
+        TextAsset textAsset = Resources.Load<TextAsset>("test");
+        Grid = ParseMap(textAsset.text);
     }
 
     public Cell WorldToCell(Vector3 posWorld)
     {
-        var posX = Mathf.RoundToInt(posWorld.z);
-        var posY = Mathf.RoundToInt(posWorld.x);
+        int posX = Mathf.RoundToInt(posWorld.z);
+        int posY = Mathf.RoundToInt(posWorld.x);
 
         return Grid[posX, posY];
     }
     
-    private Cell[,] ParseMap(string mapFilePath)
+    private Cell[,] ParseMap(string levelText)
     {
-        var mapRows = File.ReadAllLines(mapFilePath);
-        var mapHeight = mapRows.Length;
-        var mapWidth = mapRows[0].Split(';').Length;
-        var result = new Cell[mapWidth, mapHeight];
+        string[] mapRows = levelText.Split('\n');
+        int mapHeight = mapRows.Length;
+        int mapWidth = mapRows[0].Split(';').Length;
+        Cell[,] result = new Cell[mapWidth, mapHeight];
 
         int x;
         int y = 0;
-        foreach (var row in mapRows)
+        foreach (string row in mapRows)
         {
             var cellSymbols = row.Split(';');
             x = 0;
-            foreach (var cellSymbol in cellSymbols)
+            foreach (string cellSymbol in cellSymbols)
             {
                 CellType celltype;
                 if (_symbolToCellMapping.TryGetValue(cellSymbol, out celltype))

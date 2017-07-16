@@ -46,7 +46,7 @@ public class UnitSpawnView : MonoBehaviour
 
 		if (Input.GetKeyDown(KeyCode.Mouse0) && IsSpawnPossible())
 		{
-			_unitSpawnPreviewGo.GetComponent<Unit>().ResetMaterial();
+			_unitSpawnPreviewGo.GetComponent<Unit>().SpawnUnit();
 			_gameController.UpdateBudget(-_gameController.GetCost(_unitSpawnPreviewGo.GetComponent<Unit>().UnitType));
 			ResetSpawnPending();
 			_unitSpawnController.ResetSelectedUnit();
@@ -108,6 +108,10 @@ public class UnitSpawnView : MonoBehaviour
 
 	private bool IsSpawnPreviewPositionOutdated()
 	{
+		if (_unitSpawnPreviewGo == null)
+		{
+			return false;
+		}
 		return !(Math.Abs(_unitSpawnPreviewGo.transform.position.x - _targetUnitSpawnPreviewPosition.x) < PositionCompareTolerance) ||
 		       !(Math.Abs(_unitSpawnPreviewGo.transform.position.z - _targetUnitSpawnPreviewPosition.y) < PositionCompareTolerance);
 	}

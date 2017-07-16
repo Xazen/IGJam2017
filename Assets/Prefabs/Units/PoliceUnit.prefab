@@ -140,7 +140,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cfd2ab10617b84825b84cfd35b507444, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  UnitType: 0
   Prefab: {fileID: 1970166295554880}
+  MaxHealth: 300
   OriginalColor: {r: 0, g: 0.06666667, b: 0.4117647, a: 1}
   OriginalEmissionColor: {r: 0.10980392, g: 0.49019608, b: 0.61960787, a: 1}
   AttackDamage: 10

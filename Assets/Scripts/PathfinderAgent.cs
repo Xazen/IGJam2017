@@ -124,7 +124,7 @@ public class PathfinderAgent : MonoBehaviour
                     continue;
 
                 if (!marked.Contains(candidate) 
-                        &&  candidate.Type != CellType.Wall)
+                        && candidate.Type != CellType.Wall)
                 {
                     result.Add(candidate);
                 }
