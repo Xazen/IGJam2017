@@ -3,6 +3,9 @@ using UnityEngine;
 
 public class Parliament : Building
 {
+
+    public static GameObject Instance { get; set; }
+
     private void OnTriggerEnter(Collider other)
     {
         var rioter = other.gameObject.GetComponent<Rioter>();
@@ -23,4 +26,11 @@ public class Parliament : Building
         yield return new WaitForSeconds(3f);
         _gameController.FailGame();
     }
+
+    private void Start()
+    {
+        Instance = gameObject;
+    }
+
+
 }
