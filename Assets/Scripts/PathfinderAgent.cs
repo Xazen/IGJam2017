@@ -31,7 +31,7 @@ public class PathfinderAgent : MonoBehaviour
         {
             var posX = Mathf.RoundToInt(world.z);
             var posY = Mathf.RoundToInt(world.x);
-            return _gridController.Grid[posX, posY].Type == CellType.Street;
+            return _gridController.Grid[posX, posY].Type != CellType.Wall;
         }
         catch
         {
