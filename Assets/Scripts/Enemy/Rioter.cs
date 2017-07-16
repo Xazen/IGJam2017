@@ -10,6 +10,7 @@ public class Rioter : MonoBehaviour
     [SerializeField] private float _invicibiltySeconds;
     [SerializeField] private int _damagePoints;
     [SerializeField] private float _attackRate;
+    [SerializeField] private Animator _animator;
 
     [SerializeField] private PathfinderAgent _pathfinder;
 
@@ -84,14 +85,22 @@ public class Rioter : MonoBehaviour
         
         if (_currentHealth == 0)
         {
-            gameObject.transform.DOMoveY(-1, 2, true).OnComplete(OnDieEnd);
+            StartCoroutine(StartDie());
             if (OnRioterDie != null)
             {
                 OnRioterDie(this);
             }
         }
     }
-    
+
+    private IEnumerator StartDie()
+    {
+        _gameController.SolvedDemoCounter++;
+        _animator.SetTrigger("Dissolve");
+        yield return new WaitForSeconds(2);
+        Destroy(gameObject);
+    }
+
     private IEnumerator BlinkDamange()
     {
         Color originalColor = GetComponentInChildren<MeshRenderer>().material.GetColor("_EmissionColor");
@@ -108,11 +117,5 @@ public class Rioter : MonoBehaviour
         {
             meshRenderers[i].material.SetColor("_EmissionColor", originalColor);
         }
-    }
-    
-    private void OnDieEnd()
-    {
-        _gameController.SolvedDemoCounter++;
-        Destroy(gameObject);
     }
 }
