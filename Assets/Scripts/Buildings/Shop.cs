@@ -7,13 +7,11 @@ public class Shop : Building
 {
     private List<Rioter> _attackers = new List<Rioter>();
     private GameController _gameController;
-    private GridController _gridController;
 
     [Inject]
-    public void Inject(GameController gameController, GridController gridController)
+    public void Inject(GameController gameController)
     {
         _gameController = gameController;
-        _gridController = gridController;
     }
     
     private void OnTriggerEnter(Collider other)
