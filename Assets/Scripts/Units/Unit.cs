@@ -14,6 +14,7 @@ public abstract class Unit : MonoBehaviour
 	public Color OriginalEmissionColor;
 	public Animator Animator;
 	public SpriteHealtbar SpriteHealtbar;
+    public AudioClip SpawnSound;
 
 	private MeshRenderer _renderer;
 
@@ -60,6 +61,7 @@ public abstract class Unit : MonoBehaviour
         _gridController.WorldToCell(transform.position).Type = CellType.Building;
 		_isSpawned = true;
 		ResetMaterial();
+        GetComponent<AudioSource>().PlayOneShot(SpawnSound);
 	}
 
 	public bool IsSpawned()
