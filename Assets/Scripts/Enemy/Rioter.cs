@@ -98,7 +98,10 @@ public class Rioter : MonoBehaviour
         _gameController.SolvedDemoCounter++;
         _animator.SetTrigger("Dissolve");
         yield return new WaitForSeconds(2);
-        Destroy(gameObject);
+        if (gameObject)
+        {
+            Destroy(gameObject);    
+        }
     }
 
     private IEnumerator BlinkDamange()

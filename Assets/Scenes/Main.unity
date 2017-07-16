@@ -4039,8 +4039,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   MainCamera: {fileID: 161569804}
-  SpawnPossibleMaterialColor: {r: 0.6397059, g: 1, b: 0.6720081, a: 0.497}
-  SpawnImpossibleMaterialColor: {r: 0.9705882, g: 0.4067906, b: 0.4067906, a: 0.484}
+  SpawnPossibleMaterialColor: {r: 0.084018186, g: 0.5441177, b: 0.12526849, a: 0.497}
+  SpawnImpossibleMaterialColor: {r: 0.7647059, g: 0.1630623, b: 0.1630623, a: 0.534}
 --- !u!4 &492941480
 Transform:
   m_ObjectHideFlags: 0

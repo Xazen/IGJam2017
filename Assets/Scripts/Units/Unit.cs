@@ -11,6 +11,7 @@ public abstract class Unit : MonoBehaviour
     public int MaxHealth;
     public Color OriginalColor;
 	public Color OriginalEmissionColor;
+	public Animator Animator;
 
 	private MeshRenderer _renderer;
 
@@ -41,8 +42,12 @@ public abstract class Unit : MonoBehaviour
 
 	public void SetMaterialColor(Color materialColor)
 	{
-		_renderer.material.color = materialColor;
-		_renderer.material.SetColor("_EmissionColor", materialColor);
+		MeshRenderer[] meshRenderers = GetComponentsInChildren<MeshRenderer>();
+		for (int i = 0; i < meshRenderers.Length; i++)
+		{
+			meshRenderers[i].material.color = materialColor;
+			meshRenderers[i].material.SetColor("_EmissionColor", materialColor);
+		}
 	}
 
 	public void SpawnUnit()
@@ -53,8 +58,12 @@ public abstract class Unit : MonoBehaviour
 	
 	private void ResetMaterial()
 	{
-		_renderer.material.color = OriginalColor;
-		_renderer.material.SetColor("_EmissionColor", OriginalEmissionColor);
+		MeshRenderer[] meshRenderers = GetComponentsInChildren<MeshRenderer>();
+		for (int i = 0; i < meshRenderers.Length; i++)
+		{
+			meshRenderers[i].material.color = OriginalColor;
+			meshRenderers[i].material.SetColor("_EmissionColor", OriginalEmissionColor);
+		}
 	}
 
     public void GetDamage(int damage)
@@ -75,14 +84,25 @@ public abstract class Unit : MonoBehaviour
 	private IEnumerator BlinkDamange()
 	{
 		Color originalColor = GetComponentInChildren<MeshRenderer>().material.GetColor("_EmissionColor");
-		GetComponentInChildren<MeshRenderer>().material.SetColor("_EmissionColor", Color.red);
+
+		MeshRenderer[] meshRenderers = GetComponentsInChildren<MeshRenderer>();
+		for (int i = 0; i < meshRenderers.Length; i++)
+		{
+			meshRenderers[i].material.SetColor("_EmissionColor", Color.red);
+		}
 		yield return new WaitForEndOfFrame();
-		GetComponentInChildren<MeshRenderer>().material.SetColor("_EmissionColor", originalColor);    
+        
+		meshRenderers = GetComponentsInChildren<MeshRenderer>();
+		for (int i = 0; i < meshRenderers.Length; i++)
+		{
+			meshRenderers[i].material.SetColor("_EmissionColor", originalColor);
+		}
 	}
 
     public virtual void DestroyUnit()
     {
         Destroyed = true;
+	    _isSpawned = false;
         foreach (var rioter in _attackers)
         {
             rioter.Continue();
@@ -98,10 +118,27 @@ public abstract class Unit : MonoBehaviour
 		    default:
 			    throw new ArgumentOutOfRangeException();
 	    }
-        Destroy(gameObject);
+	    StartCoroutine(PlayDestroyUnit());
     }
 
-    private void OnTriggerEnter(Collider other)
+	private IEnumerator PlayDestroyUnit()
+	{
+		if (Animator != null && UnitType == UnitType.Barrier)
+		{
+			Animator.SetTrigger("Dissolve");
+			yield return new WaitForSeconds(2);
+			if (gameObject)
+			{
+				Destroy(gameObject);
+			}
+		}
+		else
+		{
+			Destroy(gameObject);
+		}
+	}
+
+	private void OnTriggerEnter(Collider other)
     {
 
         var rioter = other.gameObject.GetComponent<Rioter>();
