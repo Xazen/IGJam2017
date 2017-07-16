@@ -5,7 +5,7 @@ using Zenject;
 
 public class GameController : ITickable
 {
-    public int Budget = 1000;
+    public int Budget = 800;
     public int PoliceCost = 500;
     public int BarrierCost = 400;
     public int CasualtyCounter;
@@ -16,8 +16,8 @@ public class GameController : ITickable
 
     public int[] WaveReward =
     {
-	    900,
 	    600,
+	    900,
 	    750,
 	    550
     };

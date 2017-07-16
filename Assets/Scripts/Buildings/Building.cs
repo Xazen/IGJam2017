@@ -62,8 +62,11 @@ public abstract class Building : MonoBehaviour
         }
         
         _health -= damage;
-        
-        SpriteHealtbar.SetHealth((float) _health / MaxHealth);
+
+        if (SpriteHealtbar != null)
+        {
+            SpriteHealtbar.SetHealth((float) _health / MaxHealth);
+        }
         
         //_slider.value = _health;
         if (_health <= 0)
@@ -87,12 +90,13 @@ public abstract class Building : MonoBehaviour
         if (_currentParticle)
         {
             Destroy(_currentParticle);
-            _currentParticle = Instantiate(DestroyedParticle, new Vector3(
+        }
+        
+        _currentParticle = Instantiate(DestroyedParticle, new Vector3(
                 transform.position.x, 
                 transform.position.y + 0.5f, 
                 transform.position.z), 
-                Quaternion.identity);
-        }
+            Quaternion.identity);
     }
 
     private int CalculateCasualty(int dmg)

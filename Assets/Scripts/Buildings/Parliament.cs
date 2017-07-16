@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using System.Collections;
+using UnityEngine;
 
 public class Parliament : Building
 {
@@ -13,7 +14,13 @@ public class Parliament : Building
 
     public override void DestroyBuilding()
     {
-        _gameController.FailGame();
         base.DestroyBuilding();
+        StartCoroutine(TriggerFailGame());
+    }
+
+    private IEnumerator TriggerFailGame()
+    {
+        yield return new WaitForSeconds(2.5f);
+        _gameController.FailGame();
     }
 }
