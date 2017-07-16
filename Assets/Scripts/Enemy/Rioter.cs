@@ -103,7 +103,7 @@ public class Rioter : MonoBehaviour
         {
             _currentInvicibilitySecounds -= Time.deltaTime;
         }
-        CheckSpeechBubble();
+        //CheckSpeechBubble();
     }
 
     public void Stop()
