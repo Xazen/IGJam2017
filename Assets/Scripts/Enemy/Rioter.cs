@@ -89,9 +89,19 @@ public class Rioter : MonoBehaviour
     private IEnumerator BlinkDamange()
     {
         Color originalColor = GetComponentInChildren<MeshRenderer>().material.GetColor("_EmissionColor");
-        GetComponentInChildren<MeshRenderer>().material.SetColor("_EmissionColor", Color.red);
+
+        MeshRenderer[] meshRenderers = GetComponentsInChildren<MeshRenderer>();
+        for (int i = 0; i < meshRenderers.Length; i++)
+        {
+            meshRenderers[i].material.SetColor("_EmissionColor", Color.red);
+        }
         yield return new WaitForEndOfFrame();
-        GetComponentInChildren<MeshRenderer>().material.SetColor("_EmissionColor", originalColor);    
+        
+        meshRenderers = GetComponentsInChildren<MeshRenderer>();
+        for (int i = 0; i < meshRenderers.Length; i++)
+        {
+            meshRenderers[i].material.SetColor("_EmissionColor", originalColor);
+        }
     }
     
     private void OnDieEnd()
