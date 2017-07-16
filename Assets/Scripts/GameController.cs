@@ -16,10 +16,10 @@ public class GameController : ITickable
 
     public int[] WaveReward =
     {
-	    1000,
-	    800,
+	    900,
 	    600,
-	    500
+	    750,
+	    550
     };
 	public const float RoundDuration = 20f;
 	public const float MercyDuration = 5f;
