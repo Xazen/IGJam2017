@@ -22,6 +22,7 @@ public class Rioter : MonoBehaviour
     private int _currentHealth;
     private float _currentInvicibilitySecounds;
     private GameController _gameController;
+    private bool _death;
 
     [Inject]
     public void Inject(GameController gameController)
@@ -83,8 +84,9 @@ public class Rioter : MonoBehaviour
             _currentInvicibilitySecounds = _invicibiltySeconds;
         }
         
-        if (_currentHealth == 0)
+        if (_currentHealth == 0 && !_death)
         {
+            _death = true;
             StartCoroutine(StartDie());
             if (OnRioterDie != null)
             {

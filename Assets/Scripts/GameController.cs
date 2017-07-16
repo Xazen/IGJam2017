@@ -7,7 +7,7 @@ public class GameController : ITickable
 {
     public int Budget = 1000;
     public int PoliceCost = 500;
-    public int BarrierCost = 250;
+    public int BarrierCost = 400;
     public int CasualtyCounter;
 	public int WoundedPolicemenCounter;
 	public int SolvedDemoCounter;
@@ -17,9 +17,9 @@ public class GameController : ITickable
     public int[] WaveReward =
     {
 	    1000,
-	    100,
-	    10,
-	    1
+	    800,
+	    600,
+	    500
     };
 	public const float RoundDuration = 20f;
 	public const float MercyDuration = 5f;

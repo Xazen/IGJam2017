@@ -657,7 +657,7 @@ MonoBehaviour:
   OriginalEmissionColor: {r: 0.10980392, g: 0.49019608, b: 0.61960787, a: 1}
   Animator: {fileID: 95414544634087454}
   SpriteHealtbar: {fileID: 114135015970572990}
-  AttackDamage: 10
+  AttackDamage: 40
 --- !u!135 &135576597566382930
 SphereCollider:
   m_ObjectHideFlags: 1
