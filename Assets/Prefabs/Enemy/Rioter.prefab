@@ -2108,4 +2108,6 @@ MonoBehaviour:
   _animator: {fileID: 95611361433967616}
   _pathfinder: {fileID: 114564525284648238}
   _representation: {fileID: 1917692373018458}
-  _randomPositionVector: {x: 0, y: 0}
+  _randomPositionVector: {x: 0.3, y: 0.3}
+  _colorRangeStart: {r: 0.7352941, g: 0.037846014, b: 0.037846014, a: 0.497}
+  _colorRangeEnd: {r: 0.021193765, g: 0.41176468, b: 0.023887336, a: 0.49803922}

@@ -17,6 +17,9 @@ public class Rioter : MonoBehaviour
 
     [SerializeField] private Vector2 _randomPositionVector;
 
+    [SerializeField] private Color _colorRangeStart;
+    [SerializeField] private Color _colorRangeEnd;
+
     public delegate void RioterDie(Rioter rioter);
     public event RioterDie OnRioterDie;
 
@@ -38,6 +41,10 @@ public class Rioter : MonoBehaviour
         var displacementVector = new Vector3(Random.Range(-_randomPositionVector.x, _randomPositionVector.x), 0,
             Random.Range(-_randomPositionVector.y, _randomPositionVector.y));
         _representation.transform.position += displacementVector;
+
+        var unitColor = Color.Lerp(_colorRangeStart, _colorRangeEnd, Random.Range(0f, 1f));
+        
+        SetMaterialColor(unitColor);
     }
     
     public int TryAttack()
@@ -55,6 +62,16 @@ public class Rioter : MonoBehaviour
     {
         _target = target;
         _pathfinder.CalculatePath(target);
+    }
+
+    private void SetMaterialColor(Color materialColor)
+    {
+        MeshRenderer[] meshRenderers = _representation.GetComponentsInChildren<MeshRenderer>();
+        for (int i = 0; i < meshRenderers.Length; i++)
+        {
+            meshRenderers[i].material.color = materialColor;
+            meshRenderers[i].material.SetColor("_EmissionColor", materialColor);
+        }
     }
 
     private void Start()
