@@ -7,7 +7,7 @@ public abstract class Building : MonoBehaviour
 {
     public int MaxHealth;
     public Mesh[] BuildingModels;
-    public GameObject HealthSlider;
+    public SpriteHealtbar SpriteHealtbar;
     public GameObject DamagedParticle;
     public GameObject DestroyedParticle;
 
@@ -62,6 +62,9 @@ public abstract class Building : MonoBehaviour
         }
         
         _health -= damage;
+        
+        SpriteHealtbar.SetHealth((float) _health / MaxHealth);
+        
         //_slider.value = _health;
         if (_health <= 0)
         {
