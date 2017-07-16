@@ -6,6 +6,9 @@ public class SpriteHealtbar : MonoBehaviour
 {
     public SpriteRenderer HealthSpriteRenderer;
 
+    public BillBoarding HealthSpriteBg;
+    public BillBoarding HealthSpriteFg;
+
     public void SetHealth(float health)
     {
         if (health < 0)

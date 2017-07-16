@@ -97,6 +97,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   HealthSpriteRenderer: {fileID: 212827526863127732}
+  HealthSpriteBg: {fileID: 114737679802621664}
+  HealthSpriteFg: {fileID: 114972355956578918}
 --- !u!114 &114972355956578918
 MonoBehaviour:
   m_ObjectHideFlags: 1

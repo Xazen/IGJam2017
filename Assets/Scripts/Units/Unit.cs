@@ -12,6 +12,7 @@ public abstract class Unit : MonoBehaviour
     public Color OriginalColor;
 	public Color OriginalEmissionColor;
 	public Animator Animator;
+	public SpriteHealtbar SpriteHealtbar;
 
 	private MeshRenderer _renderer;
 
@@ -73,6 +74,7 @@ public abstract class Unit : MonoBehaviour
         //    _slider.maxValue = MaxHealth;
         //}
         _health -= damage;
+	    SpriteHealtbar.SetHealth((float) _health / MaxHealth);
 	    StartCoroutine(BlinkDamange());
         //_slider.value = _health;
         if (_health <= 0)
