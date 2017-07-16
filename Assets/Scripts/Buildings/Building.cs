@@ -9,6 +9,7 @@ public abstract class Building : MonoBehaviour
     public Mesh[] BuildingModels;
     public SpriteHealtbar SpriteHealtbar;
     public GameObject DamagedParticle;
+    public GameObject InitialDamageParticle;
     public GameObject DestroyedParticle;
 
     public int BuildingValue;
@@ -19,6 +20,7 @@ public abstract class Building : MonoBehaviour
     protected GameController _gameController;
     protected bool _destroyed;
     private GameObject _currentParticle;
+    private bool _playedInitialParticle;
 
     void Awake()
     {
@@ -59,7 +61,18 @@ public abstract class Building : MonoBehaviour
                     transform.position.y + 0.5f, 
                     transform.position.z), 
                 Quaternion.identity);
+            
+            Instantiate(
+                InitialDamageParticle, 
+                new Vector3(
+                    transform.position.x, 
+                    transform.position.y + 1f, 
+                    transform.position.z), 
+                Quaternion.identity);
+
+            _playedInitialParticle = true;
         }
+
         
         _health -= damage;
 
@@ -97,6 +110,19 @@ public abstract class Building : MonoBehaviour
                 transform.position.y + 0.5f, 
                 transform.position.z), 
             Quaternion.identity);
+
+        if (!_playedInitialParticle)
+        {
+            Instantiate(
+                InitialDamageParticle, 
+                new Vector3(
+                    transform.position.x, 
+                    transform.position.y + 1f, 
+                    transform.position.z), 
+                Quaternion.identity);
+            _playedInitialParticle = true;
+        }
+        
         var audioSource = GetComponent<AudioSource>();
         audioSource.Play();
     }
