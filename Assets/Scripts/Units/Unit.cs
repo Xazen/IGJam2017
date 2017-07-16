@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
 
 public abstract class Unit : MonoBehaviour
@@ -13,7 +14,7 @@ public abstract class Unit : MonoBehaviour
 
     private List<Rioter> _attackers = new List<Rioter>();
     private int _health;
-    private bool _destroyed;
+    protected bool Destroyed;
 	private bool _isSpawned;
 
 	public abstract void OnUnitSpawned();
@@ -56,20 +57,29 @@ public abstract class Unit : MonoBehaviour
         //    _slider.maxValue = MaxHealth;
         //}
         _health -= damage;
+	    StartCoroutine(BlinkDamange());
         //_slider.value = _health;
         if (_health <= 0)
         {
             DestroyUnit();
         }
     }
+	
+	private IEnumerator BlinkDamange()
+	{
+		Color originalColor = GetComponentInChildren<MeshRenderer>().material.GetColor("_EmissionColor");
+		GetComponentInChildren<MeshRenderer>().material.SetColor("_EmissionColor", Color.red);
+		yield return new WaitForEndOfFrame();
+		GetComponentInChildren<MeshRenderer>().material.SetColor("_EmissionColor", originalColor);    
+	}
 
     public virtual void DestroyUnit()
     {
+        Destroyed = true;
         foreach (var rioter in _attackers)
         {
             rioter.Continue();
         }
-        _destroyed = true;
         Destroy(gameObject);
     }
 
@@ -77,20 +87,19 @@ public abstract class Unit : MonoBehaviour
     {
 
         var rioter = other.gameObject.GetComponent<Rioter>();
-        if (rioter != null && !_attackers.Contains(rioter) && !_destroyed && _isSpawned)
+        if (rioter != null && !_attackers.Contains(rioter) && !Destroyed && _isSpawned)
         {
             _attackers.Add(rioter);
             rioter.Stop();
         }
     }
 
-    private void OnTriggerStay(Collider other)
+    protected virtual void OnTriggerStay(Collider other)
     {
-        var rioter = other.gameObject.GetComponent<Rioter>();
-        if (rioter != null && !_destroyed)
+        Rioter rioter = other.gameObject.GetComponent<Rioter>();
+        if (rioter != null && !Destroyed)
         {
             GetDamage(rioter.TryAttack());
-            rioter.TryTakeDamage(10);
         }
     }
 }

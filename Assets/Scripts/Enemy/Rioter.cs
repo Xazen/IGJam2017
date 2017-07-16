@@ -61,7 +61,10 @@ public class Rioter : MonoBehaviour
 
     public void Continue()
     {
-        _pathfinder.CalculatePath(_target);
+        if (_currentHealth > 0)
+        {
+            _pathfinder.CalculatePath(_target);    
+        }
     }
 
     public void TryTakeDamage(int damage)
@@ -69,6 +72,7 @@ public class Rioter : MonoBehaviour
         if (_currentInvicibilitySecounds <= 0)
         {
             _currentHealth = Mathf.Max(_currentHealth - damage, 0);
+            StartCoroutine(BlinkDamange());
             _currentInvicibilitySecounds = _invicibiltySeconds;
         }
         
@@ -80,6 +84,14 @@ public class Rioter : MonoBehaviour
                 OnRioterDie(this);
             }
         }
+    }
+    
+    private IEnumerator BlinkDamange()
+    {
+        Color originalColor = GetComponentInChildren<MeshRenderer>().material.GetColor("_EmissionColor");
+        GetComponentInChildren<MeshRenderer>().material.SetColor("_EmissionColor", Color.red);
+        yield return new WaitForEndOfFrame();
+        GetComponentInChildren<MeshRenderer>().material.SetColor("_EmissionColor", originalColor);    
     }
     
     private void OnDieEnd()

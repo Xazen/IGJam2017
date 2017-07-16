@@ -9,5 +9,13 @@ public class Police : Unit
 		
 	}
 
-	
+	protected override void OnTriggerStay(Collider other)
+	{
+		base.OnTriggerStay(other);
+		Rioter rioter = other.gameObject.GetComponent<Rioter>();
+		if (rioter != null && !Destroyed)
+		{
+			rioter.TryTakeDamage(AttackDamage);
+		}
+	}
 }
