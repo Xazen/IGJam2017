@@ -20,10 +20,12 @@ public class UnitSpawnView : MonoBehaviour
 	private UnitSpawnController _unitSpawnController;
 	private Unit _unitSpawnPreview;
 	private GameController _gameController;
+	private DiContainer _diContainer;
 
 	[Inject]
-	public void Inject(UnitSpawnController unitSpawnController, GameController gameController)
+	public void Inject(UnitSpawnController unitSpawnController, GameController gameController, DiContainer diContainer)
 	{
+		_diContainer = diContainer;
 		_unitSpawnController = unitSpawnController;
 		_gameController = gameController;
 	}
@@ -75,6 +77,7 @@ public class UnitSpawnView : MonoBehaviour
 			_unitSpawnPreview = _unitSpawnController.GetSelectedUnitPrefab();
 			_unitSpawnPreviewGo = Instantiate(_unitSpawnPreview.GetModel(), _targetUnitSpawnPreviewPosition,
 				Quaternion.identity);
+			_diContainer.InjectGameObject(_unitSpawnPreviewGo);
 			_unitSpawnPreviewGo.transform.position = new Vector3(_targetUnitSpawnPreviewPosition.x, 0, _targetUnitSpawnPreviewPosition.y);
 		}
 		else if (IsSpawnPreviewPositionOutdated())

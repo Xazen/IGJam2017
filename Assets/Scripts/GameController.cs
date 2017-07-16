@@ -9,6 +9,9 @@ public class GameController : ITickable
     public int PoliceCost = 500;
     public int BarrierCost = 250;
     public int CasualtyCounter;
+	public int WoundedPolicemenCounter;
+	public int SolvedDemoCounter;
+	public int DestroyedShopCounter;
     public int RoundCasualties;
 
     public int[] WaveReward =
@@ -44,9 +47,11 @@ public class GameController : ITickable
 	private bool _isMercyDurationOver = false;
 
 	private bool _gameStarted = false;
+	private GameObject _endView;
 
-	public void Setup(Vector3[] startingPosition, Vector3 targetPosition)
+	public void Setup(Vector3[] startingPosition, Vector3 targetPosition, GameObject endView)
 	{
+		_endView = endView;
 		StartingPoint = new Vector2[startingPosition.Length];
 		for (int i = 0; i < startingPosition.Length; i++)
 		{
@@ -75,7 +80,7 @@ public class GameController : ITickable
 
     public void FailGame()
     {
-        SceneManager.LoadScene(3, LoadSceneMode.Additive);
+	    _endView.SetActive(true);
     }
 
 	public void Tick()

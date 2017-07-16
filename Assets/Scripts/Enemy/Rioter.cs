@@ -1,8 +1,7 @@
-﻿using System;
-using System.Collections;
-using System.Collections.Generic;
+﻿using System.Collections;
 using DG.Tweening;
 using UnityEngine;
+using Zenject;
 
 [RequireComponent(typeof(PathfinderAgent))]
 public class Rioter : MonoBehaviour
@@ -21,7 +20,14 @@ public class Rioter : MonoBehaviour
     private float _lastAttackTimestamp;
     private int _currentHealth;
     private float _currentInvicibilitySecounds;
+    private GameController _gameController;
 
+    [Inject]
+    public void Inject(GameController gameController)
+    {
+        _gameController = gameController;
+    }
+    
     public int TryAttack()
     {
         if (Time.time - _lastAttackTimestamp >= _attackRate)
@@ -106,6 +112,7 @@ public class Rioter : MonoBehaviour
     
     private void OnDieEnd()
     {
+        _gameController.SolvedDemoCounter++;
         Destroy(gameObject);
     }
 }

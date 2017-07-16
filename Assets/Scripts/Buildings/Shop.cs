@@ -1,10 +1,19 @@
 ﻿using System.Collections.Generic;
 using UnityEngine;
+using Zenject;
 
 public class Shop : Building
 {
     private List<Rioter> _attackers = new List<Rioter>();
+    private GameController _gameController;
 
+    [Inject]
+    public void Inject(GameController gameController)
+    {
+        Debug.Log("shop inject");
+        _gameController = gameController;
+    }
+    
     private void OnTriggerEnter(Collider other)
     {
         
@@ -32,6 +41,7 @@ public class Shop : Building
         {
             rioter.Continue();
         }
+        _gameController.DestroyedShopCounter++;
         base.DestroyBuilding();
     }
 }

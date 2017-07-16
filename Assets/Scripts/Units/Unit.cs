@@ -1,6 +1,8 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Zenject;
 
 public abstract class Unit : MonoBehaviour
 {
@@ -16,16 +18,21 @@ public abstract class Unit : MonoBehaviour
     private int _health;
     protected bool Destroyed;
 	private bool _isSpawned;
+	private GameController _gameController;
 
 	public abstract void OnUnitSpawned();
 
+	[Inject]
+	public void Inject(GameController gameController)
+	{
+		_gameController = gameController;
+	}
+	
 	public void Start()
 	{
 		_renderer = GetComponentInChildren<MeshRenderer>();
 	    _health = MaxHealth;
 	}
-
-    
 
     public GameObject GetModel()
 	{
@@ -80,6 +87,17 @@ public abstract class Unit : MonoBehaviour
         {
             rioter.Continue();
         }
+	    switch (UnitType)
+	    {
+		    case UnitType.Police:
+			    _gameController.WoundedPolicemenCounter++;
+			    break;
+		    case UnitType.Barrier:
+			    _gameController.CasualtyCounter += 1280;
+			    break;
+		    default:
+			    throw new ArgumentOutOfRangeException();
+	    }
         Destroy(gameObject);
     }
 

@@ -16,6 +16,9 @@ public class GameView : MonoBehaviour
     [Header("Prefabs")]
     public GameObject EnemySpawnerPrefab;
     
+    [Header("End View")]
+    public GameObject EndView;
+    
     private GameController _gameController;
     private List<EnemySpawner> _enemySpawners;
     private DiContainer _diContainer;
@@ -38,7 +41,8 @@ public class GameView : MonoBehaviour
         }
         _gameController.Setup(
              startingPointPositions.ToArray(),
-             CongressCenter.transform.position);
+             CongressCenter.transform.position,
+             EndView);
         
         _enemySpawners = new List<EnemySpawner>();
 
