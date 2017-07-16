@@ -21,10 +21,12 @@ public abstract class Building : MonoBehaviour
     protected bool _destroyed;
     private GameObject _currentParticle;
     private bool _playedInitialParticle;
+    private Color _originalColor;
 
     void Awake()
     {
         _health = MaxHealth;
+        _originalColor = GetComponentInChildren<MeshRenderer>().material.GetColor("_EmissionColor");
     }
 
     [Inject]
@@ -90,16 +92,15 @@ public abstract class Building : MonoBehaviour
 
     private IEnumerator BlinkDamange()
     {
-        Color originalColor = GetComponentInChildren<MeshRenderer>().material.GetColor("_EmissionColor");
         GetComponentInChildren<MeshRenderer>().material.SetColor("_EmissionColor", Color.red);
         yield return new WaitForEndOfFrame();
-        GetComponentInChildren<MeshRenderer>().material.SetColor("_EmissionColor", originalColor);    
+        GetComponentInChildren<MeshRenderer>().material.SetColor("_EmissionColor", _originalColor);    
     }
 
     public virtual void DestroyBuilding()
     {
         _destroyed = true;
-        GetComponentInChildren<MeshRenderer>().material.SetColor("_EmissionColor", Color.red);
+        GetComponentInChildren<MeshRenderer>().material.SetColor("_EmissionColor", _originalColor);
         if (_currentParticle)
         {
             Destroy(_currentParticle);
