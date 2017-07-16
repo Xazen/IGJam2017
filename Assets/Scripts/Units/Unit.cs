@@ -155,8 +155,11 @@ public abstract class Unit : MonoBehaviour
         var rioter = other.gameObject.GetComponent<Rioter>();
         if (rioter != null && !_attackers.Contains(rioter) && !Destroyed)
         {
-            _attackers.Add(rioter);
-            rioter.Stop();
+	        if (IsSpawned())
+	        {
+            	_attackers.Add(rioter);
+		        rioter.Stop();    
+	        }
         }
     }
 
