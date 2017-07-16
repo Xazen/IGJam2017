@@ -23,7 +23,7 @@ public class Parliament : Building
 
     private IEnumerator TriggerFailGame()
     {
-        yield return new WaitForSeconds(2.5f);
+        yield return new WaitForSeconds(3f);
         _gameController.FailGame();
     }
 

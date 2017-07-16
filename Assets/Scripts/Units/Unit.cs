@@ -142,7 +142,7 @@ public abstract class Unit : MonoBehaviour
 
 	private IEnumerator PlayDestroyUnit()
 	{
-		if (Animator != null && UnitType == UnitType.Barrier)
+		if (Animator != null)
 		{
 			Animator.SetTrigger("Dissolve");
 			yield return new WaitForSeconds(2);
