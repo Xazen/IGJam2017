@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections;
 using System.Collections.Generic;
+using Assets.Scripts.Model;
 using UnityEngine;
 using Zenject;
 
@@ -21,13 +22,15 @@ public abstract class Unit : MonoBehaviour
     protected bool Destroyed;
 	private bool _isSpawned;
 	private GameController _gameController;
+    private GridController _gridController;
 
 	public abstract void OnUnitSpawned();
 
 	[Inject]
-	public void Inject(GameController gameController)
+	public void Inject(GameController gameController, GridController gridController)
 	{
 		_gameController = gameController;
+	    _gridController = gridController;
 	}
 	
 	public void Start()
@@ -53,6 +56,8 @@ public abstract class Unit : MonoBehaviour
 
 	public void SpawnUnit()
 	{
+
+        _gridController.WorldToCell(transform.position).Type = CellType.Building;
 		_isSpawned = true;
 		ResetMaterial();
 	}
@@ -114,6 +119,7 @@ public abstract class Unit : MonoBehaviour
     {
         Destroyed = true;
 	    _isSpawned = false;
+        _gridController.WorldToCell(transform.position).Type = CellType.Street;
         foreach (var rioter in _attackers)
         {
             rioter.Continue();

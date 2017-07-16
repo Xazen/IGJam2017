@@ -16,7 +16,7 @@ public class GridController: IInitializable
         {"3", CellType.Street },
         {"4", CellType.Street },
         {"5", CellType.Street },
-        {"6", CellType.Street },
+        {"6", CellType.Building },
         {"7", CellType.Street },
     };
 
