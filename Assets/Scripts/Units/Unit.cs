@@ -56,6 +56,11 @@ public abstract class Unit : MonoBehaviour
 		_isSpawned = true;
 		ResetMaterial();
 	}
+
+	public bool IsSpawned()
+	{
+		return _isSpawned;
+	}
 	
 	private void ResetMaterial()
 	{
@@ -69,6 +74,10 @@ public abstract class Unit : MonoBehaviour
 
     public void GetDamage(int damage)
     {
+	    if (!_isSpawned)
+	    {
+		    return;
+	    }
         //if (_slider == null) {
         //    _slider = Instantiate(HealthSlider,transform.position,Quaternion.identity,transform).GetComponentInChildren<Slider>();
         //    _slider.maxValue = MaxHealth;
@@ -144,7 +153,7 @@ public abstract class Unit : MonoBehaviour
     {
 
         var rioter = other.gameObject.GetComponent<Rioter>();
-        if (rioter != null && !_attackers.Contains(rioter) && !Destroyed && _isSpawned)
+        if (rioter != null && !_attackers.Contains(rioter) && !Destroyed)
         {
             _attackers.Add(rioter);
             rioter.Stop();
@@ -152,10 +161,14 @@ public abstract class Unit : MonoBehaviour
     }
 
     protected virtual void OnTriggerStay(Collider other)
-    {
+    {   
         Rioter rioter = other.gameObject.GetComponent<Rioter>();
         if (rioter != null && !Destroyed)
         {
+	        if (!_isSpawned)
+	        {
+		        return;
+	        }
             GetDamage(rioter.TryAttack());
         }
     }

@@ -15,6 +15,10 @@ public class Police : Unit
 		Rioter rioter = other.gameObject.GetComponent<Rioter>();
 		if (rioter != null && !Destroyed)
 		{
+			if (!IsSpawned())
+			{
+				return;
+			}
 			rioter.TryTakeDamage(AttackDamage);
 		}
 	}
