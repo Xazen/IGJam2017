@@ -19,6 +19,9 @@ public class Rioter : MonoBehaviour
 
     [SerializeField] private Color _colorRangeStart;
     [SerializeField] private Color _colorRangeEnd;
+    [SerializeField] private GameObject _speechBubble;
+    [SerializeField] private float _speechbubbleDistance;
+    [SerializeField] private float _speechbubbleDuration;
 
     public delegate void RioterDie(Rioter rioter);
     public event RioterDie OnRioterDie;
@@ -64,6 +67,19 @@ public class Rioter : MonoBehaviour
         _pathfinder.CalculatePath(target);
     }
 
+    private void CheckSpeechBubble()
+    {
+        if (Parliament.Instance != null && _speechBubble != null)
+        {
+            var ccDist = Vector3.Distance(Parliament.Instance.transform.position, transform.position);
+            if (ccDist <= _speechbubbleDistance)
+            {
+                _speechBubble.SetActive(true);
+                Destroy(_speechBubble, _speechbubbleDuration);
+            }
+        }
+    }
+
     private void SetMaterialColor(Color materialColor)
     {
         MeshRenderer[] meshRenderers = _representation.GetComponentsInChildren<MeshRenderer>();
@@ -87,6 +103,7 @@ public class Rioter : MonoBehaviour
         {
             _currentInvicibilitySecounds -= Time.deltaTime;
         }
+        CheckSpeechBubble();
     }
 
     public void Stop()
