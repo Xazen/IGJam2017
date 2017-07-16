@@ -449,12 +449,12 @@ Prefab:
     - target: {fileID: 224723428877516162, guid: b94f0a4d38aaf6b41a8ff33f00be96da,
         type: 2}
       propertyPath: m_SizeDelta.x
-      value: 56.134476
+      value: 23.88701
       objectReference: {fileID: 0}
     - target: {fileID: 224086271221126166, guid: b94f0a4d38aaf6b41a8ff33f00be96da,
         type: 2}
       propertyPath: m_SizeDelta.x
-      value: 56.134476
+      value: 23.88701
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: b94f0a4d38aaf6b41a8ff33f00be96da, type: 2}
