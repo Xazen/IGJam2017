@@ -1,11 +1,7 @@
-﻿using System;
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 public class Parliament : Building
 {
-
     private void OnTriggerEnter(Collider other)
     {
         var rioter = other.gameObject.GetComponent<Rioter>();

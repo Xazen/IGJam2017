@@ -1,5 +1,6 @@
 ﻿using System;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using Zenject;
 
 public class GameController : ITickable
@@ -74,7 +75,7 @@ public class GameController : ITickable
 
     public void FailGame()
     {
-        Debug.Log("fail");
+        SceneManager.LoadScene(3, LoadSceneMode.Additive);
     }
 
 	public void Tick()
