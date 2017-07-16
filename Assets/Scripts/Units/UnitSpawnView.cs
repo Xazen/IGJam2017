@@ -49,6 +49,7 @@ public class UnitSpawnView : MonoBehaviour
 		if (Input.GetKeyDown(KeyCode.Mouse0) && IsSpawnPossible())
 		{
 			_unitSpawnPreviewGo.GetComponent<Unit>().SpawnUnit();
+            
 			_gameController.UpdateBudget(-_gameController.GetCost(_unitSpawnPreviewGo.GetComponent<Unit>().UnitType));
 			ResetSpawnPending();
 			_unitSpawnController.ResetSelectedUnit();

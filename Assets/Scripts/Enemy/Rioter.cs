@@ -13,6 +13,9 @@ public class Rioter : MonoBehaviour
     [SerializeField] private Animator _animator;
 
     [SerializeField] private PathfinderAgent _pathfinder;
+    [SerializeField] private GameObject _representation;
+
+    [SerializeField] private Vector2 _randomPositionVector;
 
     public delegate void RioterDie(Rioter rioter);
     public event RioterDie OnRioterDie;
@@ -28,6 +31,13 @@ public class Rioter : MonoBehaviour
     public void Inject(GameController gameController)
     {
         _gameController = gameController;
+    }
+
+    public void Randomize()
+    {
+        var displacementVector = new Vector3(Random.Range(-_randomPositionVector.x, _randomPositionVector.x), 0,
+            Random.Range(-_randomPositionVector.y, _randomPositionVector.y));
+        _representation.transform.position += displacementVector;
     }
     
     public int TryAttack()

@@ -2107,3 +2107,5 @@ MonoBehaviour:
   _attackRate: 1
   _animator: {fileID: 95611361433967616}
   _pathfinder: {fileID: 114564525284648238}
+  _representation: {fileID: 1917692373018458}
+  _randomPositionVector: {x: 0, y: 0}

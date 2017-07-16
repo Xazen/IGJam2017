@@ -21,6 +21,8 @@ public class EnemySpawner : MonoBehaviour
 
         var enemyBhv = enemy.GetComponent<Rioter>();
 
+        enemyBhv.Randomize();
+
         enemyBhv.MoveTo(new Vector3(_gameController.TargetPoint.x, 0, _gameController.TargetPoint.y));
     }
 }

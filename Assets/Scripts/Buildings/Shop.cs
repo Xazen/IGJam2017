@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using Assets.Scripts.Model;
 using UnityEngine;
 using Zenject;
 
@@ -10,7 +11,6 @@ public class Shop : Building
     [Inject]
     public void Inject(GameController gameController)
     {
-        Debug.Log("shop inject");
         _gameController = gameController;
     }
     

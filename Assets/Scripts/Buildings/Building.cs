@@ -97,6 +97,8 @@ public abstract class Building : MonoBehaviour
                 transform.position.y + 0.5f, 
                 transform.position.z), 
             Quaternion.identity);
+        var audioSource = GetComponent<AudioSource>();
+        audioSource.Play();
     }
 
     private int CalculateCasualty(int dmg)

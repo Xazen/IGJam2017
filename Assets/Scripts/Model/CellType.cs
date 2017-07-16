@@ -8,7 +8,8 @@ namespace Assets.Scripts.Model
     public enum CellType
     {
         Street,
-        Barrier,
-        Wall
+        Wall,
+        Building
+
     }
 }
